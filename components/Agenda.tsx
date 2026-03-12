@@ -39,7 +39,7 @@ export default function Agenda() {
       <div className="max-w-[1400px] mx-auto">
 
         <div className="mb-12 reveal">
-          <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-btc-lima mb-2 flex items-center gap-3">
+          <p className="font-mono text-[0.75rem] tracking-[0.22em] uppercase text-btc-lima mb-2 flex items-center gap-3">
             <span className="inline-block w-6 h-px bg-btc-lima" />
             Programação
           </p>
@@ -52,7 +52,7 @@ export default function Agenda() {
               Salvador <span className="font-mono">2026</span>
             </span>
           </h2>
-          <p className="font-mono text-[0.65rem] tracking-[0.12em] uppercase text-white/35 mt-3">
+          <p className="font-mono text-[0.75rem] tracking-[0.12em] uppercase text-white/35 mt-3">
             26 a 29 de Março · Entrada franca em todas as atividades
           </p>
         </div>
@@ -69,10 +69,10 @@ export default function Agenda() {
                   {dia}
                 </span>
                 <div>
-                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-btc-lima">
+                  <div className="font-mono text-[0.7rem] tracking-[0.15em] uppercase text-btc-lima">
                     {weekday}
                   </div>
-                  <div className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-white/35">
+                  <div className="font-mono text-[0.7rem] tracking-[0.1em] uppercase text-white/35">
                     {mes}
                   </div>
                 </div>
@@ -87,12 +87,12 @@ export default function Agenda() {
                     style={{ borderColor: destaque ? 'var(--btc-magenta)' : 'rgba(255,255,255,0.12)' }}
                   >
                     <div
-                      className="font-mono text-[0.58rem] tracking-[0.1em] uppercase mb-1"
+                      className="font-mono text-[0.72rem] tracking-[0.1em] uppercase mb-1"
                       style={{ color: destaque ? 'var(--btc-magenta)' : 'var(--btc-lima)' }}
                     >
                       {hora}
                     </div>
-                    <div className="font-sans font-medium text-white text-[0.95rem] leading-tight mb-1">
+                    <div className="font-sans font-medium text-white text-[1.05rem] leading-tight mb-1">
                       {titulo}
                     </div>
                     <div className="font-sans font-light text-white/45 text-[0.85rem] leading-relaxed">
@@ -105,7 +105,7 @@ export default function Agenda() {
           ))}
         </div>
 
-        <p className="font-mono text-[0.6rem] tracking-[0.12em] uppercase text-white/25 mt-6 text-center">
+        <p className="font-mono text-[0.7rem] tracking-[0.12em] uppercase text-white/25 mt-6 text-center">
           Programação sujeita a alterações · Acompanhe @btcgraffitifestival
         </p>
       </div>

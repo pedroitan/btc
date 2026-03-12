@@ -35,7 +35,7 @@ export default function Artistas() {
         {/* Header */}
         <div className="flex flex-wrap justify-between items-end gap-4 mb-10 reveal">
           <div>
-            <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-btc-magenta mb-2 flex items-center gap-3">
+            <p className="font-mono text-[0.85rem] tracking-[0.22em] uppercase text-btc-magenta mb-2 flex items-center gap-3">
               <span className="inline-block w-6 h-px bg-btc-magenta" />
               Selecionados 2026
             </p>
@@ -46,7 +46,7 @@ export default function Artistas() {
               Artistas
             </h2>
           </div>
-          <span className="font-mono text-[0.65rem] tracking-[0.12em] uppercase text-white/35">
+          <span className="font-mono text-[0.85rem] tracking-[0.12em] uppercase text-white/35">
             {filtrados.length} de {artistas.length} artistas
           </span>
         </div>
@@ -57,7 +57,7 @@ export default function Artistas() {
           <div className="flex flex-wrap gap-1.5">
             <button
               onClick={() => setEstilo('todos')}
-              className={`font-mono text-[0.6rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
+              className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
                 estilo === 'todos'
                   ? 'bg-btc-magenta border-btc-magenta text-white'
                   : 'border-white/20 text-white/50 hover:border-white/50 hover:text-white'
@@ -70,7 +70,7 @@ export default function Artistas() {
               <button
                 key={e}
                 onClick={() => setEstilo(estilo === e ? 'todos' : e)}
-                className={`font-mono text-[0.6rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
+                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
                   estilo === e
                     ? 'bg-btc-lima/90 border-btc-lima text-btc-preto'
                     : 'border-white/20 text-white/50 hover:border-btc-lima/50 hover:text-btc-lima'
@@ -90,7 +90,7 @@ export default function Artistas() {
               <button
                 key={g}
                 onClick={() => setGenero(g)}
-                className={`font-mono text-[0.6rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
+                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
                   genero === g
                     ? 'bg-btc-laranja/90 border-btc-laranja text-white'
                     : 'border-white/20 text-white/50 hover:border-btc-laranja/50 hover:text-btc-laranja'
@@ -108,7 +108,7 @@ export default function Artistas() {
               <button
                 key={o}
                 onClick={() => setOrigem(o)}
-                className={`font-mono text-[0.6rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
+                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
                   origem === o
                     ? 'bg-white/90 border-white text-btc-preto'
                     : 'border-white/20 text-white/50 hover:border-white/50 hover:text-white'
@@ -130,12 +130,12 @@ export default function Artistas() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <p className="font-neocrash text-3xl text-white/20" style={{ fontFamily: 'Neocrash, "Bebas Neue", sans-serif' }}>
+            <p className="font-neocrash text-3.1xl text-white/20" style={{ fontFamily: 'Neocrash, "Bebas Neue", sans-serif' }}>
               Nenhum artista encontrado
             </p>
             <button
               onClick={() => { setEstilo('todos'); setGenero('todos'); setOrigem('todos') }}
-              className="mt-4 font-mono text-[0.65rem] tracking-[0.12em] uppercase text-btc-magenta hover:underline"
+              className="mt-4 font-mono text-[0.85rem] tracking-[0.12em] uppercase text-btc-magenta hover:underline"
             >
               Limpar filtros
             </button>

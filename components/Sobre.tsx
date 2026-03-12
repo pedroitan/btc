@@ -49,7 +49,7 @@ export default function Sobre() {
 
           {/* Coluna esquerda */}
           <div className="reveal">
-            <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-btc-magenta mb-3 flex items-center gap-3">
+            <p className="font-mono text-[0.75rem] tracking-[0.22em] uppercase text-btc-magenta mb-3 flex items-center gap-3">
               <span className="inline-block w-6 h-px bg-btc-magenta" />
               O Festival
             </p>
@@ -87,7 +87,7 @@ export default function Sobre() {
                   <div className="font-mono text-4xl text-white leading-none tabular-nums">
                     {num}
                   </div>
-                  <div className="font-mono text-[0.62rem] tracking-[0.12em] uppercase text-white/45 mt-1">
+                  <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-white/45 mt-1">
                     {desc}
                   </div>
                 </div>
@@ -96,13 +96,13 @@ export default function Sobre() {
 
             {/* DNA */}
             <div className="mt-12 space-y-4">
-              <p className="font-mono text-[0.62rem] tracking-[0.2em] uppercase text-white/35">
+              <p className="font-mono text-[0.72rem] tracking-[0.2em] uppercase text-white/35">
                 DNA do Festival
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {dna.map(({ titulo, desc }) => (
                   <div key={titulo} className="bg-white/[0.04] border border-white/[0.07] p-4 reveal" style={{ borderRadius: '2px' }}>
-                    <p className="font-mono text-[0.65rem] tracking-[0.1em] uppercase text-btc-lima mb-1">{titulo}</p>
+                    <p className="font-mono text-[0.75rem] tracking-[0.1em] uppercase text-btc-lima mb-1">{titulo}</p>
                     <p className="font-sans font-light text-white/55 text-[0.88rem] leading-relaxed">{desc}</p>
                   </div>
                 ))}
@@ -112,7 +112,7 @@ export default function Sobre() {
 
           {/* Coluna direita — Timeline */}
           <div className="reveal">
-            <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-white/35 mb-6 flex items-center gap-3">
+            <p className="font-mono text-[0.75rem] tracking-[0.22em] uppercase text-white/35 mb-6 flex items-center gap-3">
               <span className="inline-block w-6 h-px bg-white/20" />
               Histórico · 8 Edições
             </p>
@@ -136,7 +136,7 @@ export default function Sobre() {
                         >
                           {ano}
                         </div>
-                        <div className="font-mono text-[0.55rem] tracking-[0.1em] uppercase text-white/35 mt-0.5">
+                        <div className="font-mono text-[0.65rem] tracking-[0.1em] uppercase text-white/35 mt-0.5">
                           {num} Ed.
                         </div>
                       </div>
@@ -149,7 +149,7 @@ export default function Sobre() {
                         </p>
                         {atual && (
                           <span
-                            className="inline-block font-mono text-[0.55rem] tracking-[0.1em] uppercase bg-btc-lima/10 text-btc-lima px-2 py-0.5 mt-2"
+                            className="inline-block font-mono text-[0.65rem] tracking-[0.1em] uppercase bg-btc-lima/10 text-btc-lima px-2 py-0.5 mt-2"
                             style={{ borderRadius: '2px' }}
                           >
                             Em andamento

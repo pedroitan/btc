@@ -158,7 +158,7 @@ export default function Hero() {
 
         {/* Tema */}
         <p
-          className="font-mono text-[0.68rem] sm:text-[0.75rem] tracking-[0.2em] uppercase text-white/40 mb-4 opacity-0"
+          className="font-mono text-[0.78rem] sm:text-[0.75rem] tracking-[0.2em] uppercase text-white/40 mb-4 opacity-0"
           style={{ animation: 'fadeUp 0.75s 0.62s ease forwards' }}
         >
           8ª edição &nbsp;·&nbsp; Tema: Tecnologia Ancestral
@@ -201,7 +201,7 @@ export default function Hero() {
           <Countdown />
           <a
             href="#artistas"
-            className="font-mono text-[0.62rem] tracking-[0.12em] uppercase text-btc-lima/70 hover:text-btc-lima border border-btc-lima/25 hover:border-btc-lima/60 px-4 py-2 transition-all duration-200 ml-auto"
+            className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-btc-lima/70 hover:text-btc-lima border border-btc-lima/25 hover:border-btc-lima/60 px-4 py-2 transition-all duration-200 ml-auto"
             style={{ borderRadius: '2px' }}
           >
             50 artistas selecionados →

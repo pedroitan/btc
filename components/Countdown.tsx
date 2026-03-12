@@ -40,7 +40,7 @@ export default function Countdown() {
 
   if (time.ended) {
     return (
-      <div className="font-mono text-[0.65rem] tracking-[0.18em] uppercase text-btc-lima">
+      <div className="font-mono text-[0.75rem] tracking-[0.18em] uppercase text-btc-lima">
         O festival começou!
       </div>
     )
@@ -55,7 +55,7 @@ export default function Countdown() {
 
   return (
     <div className="flex items-center gap-3">
-      <span className="font-mono text-[0.6rem] tracking-[0.18em] uppercase text-white/35 hidden sm:block">
+      <span className="font-mono text-[0.7rem] tracking-[0.18em] uppercase text-white/35 hidden sm:block">
         Faltam
       </span>
       <div className="flex items-center gap-2">
@@ -65,7 +65,7 @@ export default function Countdown() {
               <span className="block font-mono text-3xl leading-none text-btc-magenta tabular-nums">
                 {pad(value)}
               </span>
-              <span className="block font-mono text-[0.5rem] tracking-[0.15em] uppercase text-white/35 mt-0.5">
+              <span className="block font-mono text-[0.6rem] tracking-[0.15em] uppercase text-white/35 mt-0.5">
                 {label}
               </span>
             </div>

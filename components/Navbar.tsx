@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const LINKS = [
   { href: '#sobre',    label: 'Festival' },
@@ -29,16 +30,14 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2 group">
-          <span
-            className="font-neocrash text-2xl tracking-widest text-white group-hover:text-btc-magenta transition-colors"
-            style={{ fontFamily: 'Neocrash, "Bebas Neue", sans-serif' }}
-          >
-            BTC
-          </span>
-          <span className="font-mono text-[0.6rem] tracking-[0.18em] uppercase text-white/40 mt-1 hidden sm:block">
-            / Bahia de Todas as Cores
-          </span>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="/logo/festival_btc.png"
+            alt="Governo da Bahia apresenta: Festival Bahia de Todas as Cores"
+            width={1063}
+            height={67}
+            className="h-auto w-auto max-w-[220px] sm:max-w-[300px] opacity-90 group-hover:opacity-100 transition-opacity"
+          />
         </Link>
 
         <ul className="hidden md:flex gap-8 list-none">
@@ -46,7 +45,7 @@ export default function Navbar() {
             <li key={href}>
               <a
                 href={href}
-                className="font-mono text-[0.7rem] tracking-[0.14em] uppercase text-white/50 hover:text-white transition-colors"
+                className="font-mono text-[0.85rem] tracking-[0.14em] uppercase text-white/50 hover:text-white transition-colors"
               >
                 {label}
               </a>

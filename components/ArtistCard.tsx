@@ -117,14 +117,14 @@ export default function ArtistCard({ artista }: Props) {
         >
           {artista.nome}
         </span>
-        <span className="block font-mono text-[0.65rem] tracking-[0.12em] uppercase text-white/45 mt-0.5">
+        <span className="block font-mono text-[0.75rem] tracking-[0.12em] uppercase text-white/45 mt-0.5">
           {location}
         </span>
         <div className="flex flex-wrap gap-1 mt-2">
           {artista.estilos.slice(0, 2).map((e) => (
             <span
               key={e}
-              className="font-mono text-[0.58rem] tracking-[0.08em] uppercase text-btc-lima/80 border border-white/15 px-1.5 py-0.5"
+              className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-btc-lima/80 border border-white/15 px-1.5 py-0.5"
               style={{ borderRadius: '2px' }}
             >
               {e}
@@ -132,7 +132,7 @@ export default function ArtistCard({ artista }: Props) {
           ))}
           {artista.destaque && (
             <span
-              className="font-mono text-[0.58rem] tracking-[0.08em] uppercase text-btc-magenta/90 border border-btc-magenta/30 px-1.5 py-0.5"
+              className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-btc-magenta/90 border border-btc-magenta/30 px-1.5 py-0.5"
               style={{ borderRadius: '2px' }}
             >
               Destaque
@@ -140,7 +140,7 @@ export default function ArtistCard({ artista }: Props) {
           )}
           {artista.pais !== 'Brasil' && (
             <span
-              className="font-mono text-[0.58rem] tracking-[0.08em] uppercase text-btc-laranja/80 border border-btc-laranja/25 px-1.5 py-0.5"
+              className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-btc-laranja/80 border border-btc-laranja/25 px-1.5 py-0.5"
               style={{ borderRadius: '2px' }}
             >
               {artista.pais}

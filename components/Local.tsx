@@ -12,7 +12,7 @@ export default function Local() {
 
             {/* Info */}
             <div className="reveal">
-              <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-btc-magenta mb-2 flex items-center gap-3">
+              <p className="font-mono text-[0.85rem] tracking-[0.22em] uppercase text-btc-magenta mb-2 flex items-center gap-3">
                 <span className="inline-block w-6 h-px bg-btc-magenta" />
                 Onde acontece
               </p>
@@ -24,7 +24,7 @@ export default function Local() {
                 <span className="text-btc-magenta text-glow-magenta">Bahia</span>
               </h2>
 
-              <div className="space-y-4 text-white/60 font-sans font-light leading-relaxed text-[1.05rem] max-w-[44ch]">
+              <div className="space-y-4 text-white/60 font-sans font-light leading-relaxed text-[1.15rem] max-w-[44ch]">
                 <p>
                   A 8ª edição do BTC acontece em Salvador, cidade que abrigou as primeiras edições e
                   onde o festival tem suas raízes mais profundas. Diversos pontos da cidade serão
@@ -37,13 +37,13 @@ export default function Local() {
               </div>
 
               <div className="mt-8 flex flex-col gap-2">
-                <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-btc-lima">
+                <div className="font-mono text-[0.82rem] tracking-[0.12em] uppercase text-btc-lima">
                   Salvador · Bahia · Brasil
                 </div>
-                <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-white/45">
+                <div className="font-mono text-[0.82rem] tracking-[0.12em] uppercase text-white/45">
                   26 a 29 de Março de 2026
                 </div>
-                <div className="font-mono text-[0.65rem] tracking-[0.1em] uppercase text-btc-magenta mt-1">
+                <div className="font-mono text-[0.85rem] tracking-[0.1em] uppercase text-btc-magenta mt-1">
                   Locais detalhados em breve
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default function Local() {
                 >
                   SALVADOR
                 </div>
-                <div className="font-mono text-[0.6rem] tracking-[0.2em] uppercase text-white/40">
+                <div className="font-mono text-[0.82rem] tracking-[0.2em] uppercase text-white/40">
                   Bahia · Brasil
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function Local() {
         </div>
 
         <div className="relative z-10 max-w-[800px] mx-auto">
-          <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-btc-magenta mb-3 flex items-center justify-center gap-3 reveal">
+          <p className="font-mono text-[0.85rem] tracking-[0.22em] uppercase text-btc-magenta mb-3 flex items-center justify-center gap-3 reveal">
             <span className="inline-block w-6 h-px bg-btc-magenta" />
             Participe
             <span className="inline-block w-6 h-px bg-btc-magenta" />
@@ -152,7 +152,7 @@ export default function Local() {
             <span className="text-btc-magenta text-glow-magenta">da Bahia</span>
           </h2>
 
-          <p className="font-sans font-light text-white/55 text-[1.05rem] sm:text-xl max-w-[48ch] mx-auto leading-relaxed mb-10 reveal">
+          <p className="font-sans font-light text-white/55 text-[1.15rem] sm:text-xl max-w-[48ch] mx-auto leading-relaxed mb-10 reveal">
             Inscrições abertas para artistas de todo o Brasil e do mundo. A seleção é feita pelo
             Coletivo Vai e Faz com foco em diversidade regional, estética e de gênero.
           </p>
@@ -162,7 +162,7 @@ export default function Local() {
               href="https://docs.google.com/forms/d/e/1FAIpQLScpy-Z43rDFw6x1Kl5KFRA39DJ-Dn_dY_TS6y6F3k3UTgG7UQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block font-mono text-[0.75rem] tracking-[0.12em] uppercase bg-btc-magenta text-white px-8 py-4 hover:bg-btc-magenta-dark hover:-translate-y-0.5 transition-all duration-150 shadow-glow-magenta"
+              className="inline-block font-mono text-[0.85rem] tracking-[0.12em] uppercase bg-btc-magenta text-white px-8 py-4 hover:bg-btc-magenta-dark hover:-translate-y-0.5 transition-all duration-150 shadow-glow-magenta"
               style={{ borderRadius: '2px' }}
             >
               Inscrever-se como artista
@@ -171,7 +171,7 @@ export default function Local() {
               href="https://www.instagram.com/btcgraffitifestival/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block font-mono text-[0.75rem] tracking-[0.12em] uppercase bg-transparent text-white px-8 py-4 border border-white/25 hover:border-white/60 hover:-translate-y-0.5 transition-all duration-150"
+              className="inline-block font-mono text-[0.85rem] tracking-[0.12em] uppercase bg-transparent text-white px-8 py-4 border border-white/25 hover:border-white/60 hover:-translate-y-0.5 transition-all duration-150"
               style={{ borderRadius: '2px' }}
             >
               Seguir no Instagram

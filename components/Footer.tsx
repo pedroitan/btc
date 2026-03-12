@@ -23,7 +23,7 @@ export default function Footer() {
       {/* Régua de patrocinadores */}
       <div className="border-b border-white/[0.06] py-8 px-6">
         <div className="max-w-[1400px] mx-auto">
-          <p className="font-mono text-[0.58rem] tracking-[0.2em] uppercase text-white/25 mb-6 text-center">
+          <p className="font-mono text-[0.72rem] tracking-[0.2em] uppercase text-white/25 mb-6 text-center">
             Realização & Patrocínio
           </p>
           <div className="flex justify-center">
@@ -60,7 +60,7 @@ export default function Footer() {
                   href={href}
                   target={external ? '_blank' : undefined}
                   rel={external ? 'noopener noreferrer' : undefined}
-                  className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-white/25 hover:text-white/60 transition-colors"
+                  className="font-mono text-[0.72rem] tracking-[0.15em] uppercase text-white/25 hover:text-white/60 transition-colors"
                 >
                   {label}
                 </a>
@@ -69,7 +69,7 @@ export default function Footer() {
           </ul>
 
           {/* Créditos */}
-          <span className="font-mono text-[0.58rem] tracking-[0.08em] text-white/15">
+          <span className="font-mono text-[0.72rem] tracking-[0.08em] text-white/15">
             Coletivo Vai e Faz · Rede AMO · Secult-BA
           </span>
         </div>

@@ -74,7 +74,7 @@ export default function Tema() {
       <div className="relative z-10 max-w-[1400px] mx-auto">
         {/* Header */}
         <div className="text-center mb-14 reveal">
-          <p className="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-btc-lima mb-3 flex items-center justify-center gap-3">
+          <p className="font-mono text-[0.75rem] tracking-[0.22em] uppercase text-btc-lima mb-3 flex items-center justify-center gap-3">
             <span className="inline-block w-8 h-px bg-btc-lima/60" />
             8ª Edição · Tema Central
             <span className="inline-block w-8 h-px bg-btc-lima/60" />
