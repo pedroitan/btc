@@ -195,11 +195,9 @@ export default function ArtistaPage({ params }: Props) {
                 <p className="font-mono text-[0.58rem] tracking-[0.15em] uppercase text-white/30 mb-1">
                   Selecionado para
                 </p>
-                <p
-                  className="font-neocrash text-lg text-white"
-                  style={{ fontFamily: 'Neocrash, "Bebas Neue", sans-serif' }}
-                >
-                  BTC 2026
+                <p className="text-lg text-white leading-none">
+                  <span className="font-neocrash" style={{ fontFamily: 'Neocrash, "Bebas Neue", sans-serif' }}>BTC </span>
+                  <span className="font-mono tabular-nums">2026</span>
                 </p>
                 <p className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-white/35">
                   8ª Edição · Salvador-BA
