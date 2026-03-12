@@ -1,27 +1,149 @@
+/* ─── FONTES GOOGLE ────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ─── FONTE NEOCRASH ───────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Neocrash';
+  src: url('/fonts/NeocrashPersonalUse.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── CSS VARIABLES ────────────────────────────────────────────────────── */
+:root {
+  --btc-azul:          #0B12CC;
+  --btc-azul-deep:     #07099A;
+  --btc-magenta:       #E8197A;
+  --btc-magenta-dark:  #C1135F;
+  --btc-vermelho:      #CC1A1A;
+  --btc-laranja:       #FF6A00;
+  --btc-roxo:          #5B0FAA;
+  --btc-lima:          #CCFF00;
+  --btc-branco:        #FFFFFF;
+  --btc-preto:         #050508;
+  --btc-muted:         rgba(255, 255, 255, 0.55);
+  --btc-muted-dark:    rgba(255, 255, 255, 0.3);
+
+  --glow-magenta: 0 0 30px rgba(232, 25, 122, 0.5), 0 0 60px rgba(232, 25, 122, 0.2);
+  --glow-laranja:  0 0 30px rgba(255, 106, 0, 0.5),  0 0 60px rgba(255, 106, 0, 0.2);
+  --glow-lima:     0 0 20px rgba(204, 255, 0, 0.4),  0 0 40px rgba(204, 255, 0, 0.15);
+}
+
+/* ─── RESET E BASE ─────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--btc-preto);
+  color: var(--btc-branco);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* ─── GRAIN OVERLAY ────────────────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 9999;
 }
+
+/* ─── SELEÇÃO DE TEXTO ─────────────────────────────────────────────────── */
+::selection {
+  background-color: var(--btc-magenta);
+  color: var(--btc-branco);
+}
+
+/* ─── SCROLLBAR ────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--btc-preto); }
+::-webkit-scrollbar-thumb { background: var(--btc-magenta); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--btc-laranja); }
+
+/* ─── UTILITÁRIOS CUSTOM ───────────────────────────────────────────────── */
+.font-neocrash {
+  font-family: 'Neocrash', 'Bebas Neue', sans-serif;
+}
+
+.text-glow-magenta {
+  text-shadow: 0 0 20px rgba(232, 25, 122, 0.8), 0 0 40px rgba(232, 25, 122, 0.4);
+}
+.text-glow-laranja {
+  text-shadow: 0 0 20px rgba(255, 106, 0, 0.8), 0 0 40px rgba(255, 106, 0, 0.4);
+}
+.text-glow-lima {
+  text-shadow: 0 0 15px rgba(204, 255, 0, 0.7);
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+}
+.text-outline-magenta {
+  -webkit-text-stroke: 2px var(--btc-magenta);
+  color: transparent;
+}
+
+.tag-btc {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.6rem;
+  color: var(--btc-muted);
+}
+
+.line-neon {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--btc-magenta), transparent);
+}
+.line-neon-lima {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--btc-lima), transparent);
+}
+
+.reveal {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.js-loaded .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+.js-loaded .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.circuit-border {
+  position: relative;
+}
+.circuit-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--btc-magenta) 0%, var(--btc-lima) 50%, var(--btc-laranja) 100%);
+  opacity: 0.6;
+}
+
