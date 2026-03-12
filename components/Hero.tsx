@@ -8,7 +8,7 @@ export default function Hero() {
       className="relative min-h-screen overflow-hidden flex flex-col"
       style={{ background: '#050508' }}
     >
-      {/* Textura de fundo */}
+      {/* Fundo */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/bg/bg_azul.png"
@@ -18,7 +18,6 @@ export default function Hero() {
           className="object-cover object-center opacity-60"
           sizes="100vw"
         />
-        {/* Gradiente sobre textura */}
         <div
           className="absolute inset-0"
           style={{
@@ -32,165 +31,113 @@ export default function Hero() {
         />
       </div>
 
-      {/* Personagens — mix-blend-mode screen */}
+      {/* 26 a 29 de Março — top right */}
+      <div
+        className="absolute top-20 sm:top-24 right-5 sm:right-10 z-30 opacity-0"
+        style={{ animation: 'fadeUp 0.7s 0.35s ease forwards' }}
+      >
+        <Image
+          src="/logo/26_a_29_marco_new.png"
+          alt="26 a 29 de Março"
+          width={946}
+          height={508}
+          className="w-auto h-auto max-w-[120px] sm:max-w-[165px] lg:max-w-[210px]"
+        />
+      </div>
+
+      {/* Personagens — z-10, bottom-aligned, spread */}
       <div className="absolute inset-0 z-10 pointer-events-none select-none">
-        {/* Personagem principal */}
+        {/* Personagem 1 — esquerda */}
         <div
-          className="absolute bottom-0 right-[-2%] w-[52vw] max-w-[680px] h-[95%]"
+          className="absolute bottom-0 left-0 w-[34%] sm:w-[29%] lg:w-[25%]"
           style={{ mixBlendMode: 'screen' }}
         >
           <Image
-            src="/personagens/personagem_1.png"
-            alt="Personagem afrofuturista BTC"
-            fill
-            priority
-            className="object-contain object-bottom"
-            sizes="52vw"
+            src="/personagens/personagem_1_new.png"
+            alt=""
+            width={1764}
+            height={2528}
+            className="w-full h-auto"
           />
         </div>
-        {/* Personagem secundário — desktop only */}
+        {/* Personagem 3 — direita */}
         <div
-          className="absolute bottom-0 right-[32vw] w-[22vw] max-w-[300px] h-[72%] hidden xl:block"
-          style={{ mixBlendMode: 'screen', opacity: 0.75 }}
+          className="absolute bottom-0 right-0 w-[34%] sm:w-[29%] lg:w-[25%]"
+          style={{ mixBlendMode: 'screen' }}
         >
           <Image
-            src="/personagens/personagem_3.png"
-            alt="Personagem afrofuturista BTC"
-            fill
-            className="object-contain object-bottom"
-            sizes="22vw"
+            src="/personagens/personagem_3_new.png"
+            alt=""
+            width={2003}
+            height={2518}
+            className="w-full h-auto"
+          />
+        </div>
+        {/* Personagem 2a — centro, na frente (último no DOM) */}
+        <div
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[30%] sm:w-[25%] lg:w-[22%]"
+          style={{ mixBlendMode: 'screen' }}
+        >
+          <Image
+            src="/personagens/personagem_2a_new.png"
+            alt=""
+            width={1679}
+            height={2753}
+            className="w-full h-auto"
           />
         </div>
       </div>
 
-      {/* Conteúdo principal */}
-      <div className="relative z-20 flex flex-col justify-center flex-1 max-w-[1400px] mx-auto w-full px-6 sm:px-10 pt-28 pb-6">
+      {/* Conteúdo central — logos */}
+      <div className="relative z-20 flex-1 flex flex-col items-center justify-center pt-24 pb-[32vh] px-6 text-center">
 
-        {/* Eyebrow — imagem do governo ou fallback texto */}
+        {/* 8ª Edição badge */}
         <div
-          className="mb-5 opacity-0"
+          className="opacity-0"
           style={{ animation: 'fadeUp 0.7s 0.1s ease forwards' }}
         >
           <Image
-            src="/logo/governo_apresenta.png"
-            alt="Governo da Bahia apresenta: Festival Bahia de Todas as Cores"
-            width={500}
-            height={36}
-            className="max-w-[260px] sm:max-w-[360px] lg:max-w-[480px] w-full h-auto"
+            src="/logo/8a_oitava_new.png"
+            alt="8ª Edição"
+            width={476}
+            height={501}
+            className="w-auto h-auto max-h-[56px] sm:max-h-[72px] lg:max-h-[88px] mx-auto mb-3"
           />
         </div>
 
-        {/* Título principal — HTML Neocrash (não depende de imagem) */}
+        {/* Logo festival — elemento principal */}
         <div
-          className="mb-2 opacity-0"
-          style={{ animation: 'fadeUp 0.75s 0.25s ease forwards' }}
+          className="opacity-0"
+          style={{ animation: 'fadeUp 0.75s 0.22s ease forwards' }}
         >
-          <h1
-            className="font-neocrash uppercase leading-[0.85] text-white"
-            style={{
-              fontFamily: 'Neocrash, "Bebas Neue", sans-serif',
-              fontSize: 'clamp(3.6rem, 11.5vw, 11rem)',
-              letterSpacing: '0.01em',
-              textShadow: '0 0 60px rgba(232,25,122,0.25)',
-            }}
-          >
-            Bahia de<br />
-            <span
-              style={{
-                color: '#E8197A',
-                textShadow: '0 0 40px rgba(232,25,122,0.7), 0 0 80px rgba(232,25,122,0.3)',
-              }}
-            >
-              Todas as
-            </span>
-            <br />Cores
-          </h1>
+          <Image
+            src="/logo/logo_festival_new.png"
+            alt="Festival Bahia de Todas as Cores"
+            width={750}
+            height={1151}
+            priority
+            className="w-auto h-auto max-h-[240px] sm:max-h-[320px] lg:max-h-[400px] mx-auto"
+          />
         </div>
 
-        {/* Badge + logo em linha */}
+        {/* Salvador Bahia */}
         <div
-          className="flex flex-wrap items-center gap-4 mb-6 opacity-0"
+          className="mt-5 opacity-0"
           style={{ animation: 'fadeUp 0.75s 0.4s ease forwards' }}
         >
           <Image
-            src="/logo/8a_oitava_BTC.png"
-            alt="8ª edição BTC"
-            width={120}
-            height={48}
-            className="h-10 sm:h-12 w-auto"
+            src="/logo/salvador_bahia_new.png"
+            alt="Salvador, Bahia"
+            width={924}
+            height={99}
+            className="w-auto h-auto max-w-[190px] sm:max-w-[250px] lg:max-w-[310px] mx-auto"
           />
-          <div className="h-8 w-px bg-white/15" />
-          <Image
-            src="/logo/logo_festival.png"
-            alt="Bahia de Todas as Cores"
-            width={300}
-            height={60}
-            className="h-8 sm:h-10 w-auto max-w-[220px] sm:max-w-xs"
-          />
-        </div>
-
-        {/* Datas + Local — HTML Neocrash */}
-        <div
-          className="flex flex-wrap items-baseline gap-x-6 gap-y-1 mb-8 opacity-0"
-          style={{ animation: 'fadeUp 0.75s 0.52s ease forwards' }}
-        >
-          <span
-            className="font-mono uppercase leading-none text-btc-lima tabular-nums"
-            style={{
-              fontSize: 'clamp(1.4rem, 3.5vw, 2.8rem)',
-              textShadow: '0 0 30px rgba(204,255,0,0.5)',
-              letterSpacing: '0.04em',
-            }}
-          >
-            26 a 29 de Março
-          </span>
-          <span
-            className="font-neocrash uppercase leading-none text-btc-magenta"
-            style={{
-              fontFamily: 'Neocrash, "Bebas Neue", sans-serif',
-              fontSize: 'clamp(1.2rem, 2.8vw, 2.4rem)',
-              textShadow: '0 0 20px rgba(232,25,122,0.6)',
-            }}
-          >
-            Salvador · Bahia
-          </span>
-        </div>
-
-        {/* Tema */}
-        <p
-          className="font-mono text-[0.78rem] sm:text-[0.75rem] tracking-[0.2em] uppercase text-white/40 mb-4 opacity-0"
-          style={{ animation: 'fadeUp 0.75s 0.62s ease forwards' }}
-        >
-          8ª edição &nbsp;·&nbsp; Tema: Tecnologia Ancestral
-        </p>
-
-        {/* CTAs */}
-        <div
-          className="flex flex-wrap gap-3 opacity-0"
-          style={{ animation: 'fadeUp 0.75s 0.74s ease forwards' }}
-        >
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScpy-Z43rDFw6x1Kl5KFRA39DJ-Dn_dY_TS6y6F3k3UTgG7UQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-mono text-[0.72rem] tracking-[0.1em] uppercase bg-btc-magenta text-white px-7 py-3.5 hover:bg-btc-magenta-dark hover:-translate-y-0.5 transition-all duration-150"
-            style={{ borderRadius: '2px', boxShadow: '0 0 30px rgba(232,25,122,0.4)' }}
-          >
-            Inscrever-se como artista
-          </a>
-          <a
-            href="#artistas"
-            className="inline-block font-mono text-[0.72rem] tracking-[0.1em] uppercase text-white px-7 py-3.5 border border-white/25 hover:border-white/60 hover:-translate-y-0.5 transition-all duration-150"
-            style={{ borderRadius: '2px' }}
-          >
-            Ver artistas →
-          </a>
         </div>
       </div>
 
       {/* Barra de countdown */}
       <div
-        className="relative z-20 border-t"
+        className="relative z-30 border-t"
         style={{
           background: 'rgba(5,5,8,0.7)',
           backdropFilter: 'blur(12px)',
