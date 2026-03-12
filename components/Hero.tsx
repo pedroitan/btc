@@ -31,25 +31,37 @@ export default function Hero() {
         />
       </div>
 
-      {/* 26 a 29 de Março — top right */}
-      <div
-        className="absolute top-20 sm:top-24 right-5 sm:right-10 z-30 opacity-0"
-        style={{ animation: 'fadeUp 0.7s 0.35s ease forwards' }}
-      >
-        <Image
-          src="/logo/26_a_29_marco_new.png"
-          alt="26 a 29 de Março"
-          width={946}
-          height={508}
-          className="w-auto h-auto max-w-[120px] sm:max-w-[165px] lg:max-w-[210px]"
-        />
-      </div>
-
-      {/* Personagens — z-10, bottom-aligned, spread */}
-      <div className="absolute inset-0 z-10 pointer-events-none select-none">
-        {/* Personagem 1 — esquerda */}
+      {/* Personagens — abaixo da navbar, z-[12] no container pai (blend correto) */}
+      <div className="absolute top-16 left-0 right-0 z-[12] pointer-events-none select-none">
+        {/* Personagem 3 — esquerda (primeiro no DOM = atrás) */}
         <div
-          className="absolute bottom-0 left-0 w-[34%] sm:w-[29%] lg:w-[25%]"
+          className="absolute top-0 left-1/2"
+          style={{ transform: 'translateX(calc(-50% - 14vw))', mixBlendMode: 'screen' }}
+        >
+          <Image
+            src="/personagens/personagem_3_new.png"
+            alt=""
+            width={2003}
+            height={2518}
+            className="h-[52vh] w-auto"
+          />
+        </div>
+        {/* Personagem 2a — direita (segundo no DOM = atrás) */}
+        <div
+          className="absolute top-0 left-1/2"
+          style={{ transform: 'translateX(calc(-50% + 14vw))', mixBlendMode: 'screen' }}
+        >
+          <Image
+            src="/personagens/personagem_2a_new.png"
+            alt=""
+            width={1679}
+            height={2753}
+            className="h-[52vh] w-auto"
+          />
+        </div>
+        {/* Personagem 1 — centro exato (último no DOM = na frente) */}
+        <div
+          className="absolute top-0 left-1/2 -translate-x-1/2"
           style={{ mixBlendMode: 'screen' }}
         >
           <Image
@@ -57,80 +69,54 @@ export default function Hero() {
             alt=""
             width={1764}
             height={2528}
-            className="w-full h-auto"
-          />
-        </div>
-        {/* Personagem 3 — direita */}
-        <div
-          className="absolute bottom-0 right-0 w-[34%] sm:w-[29%] lg:w-[25%]"
-          style={{ mixBlendMode: 'screen' }}
-        >
-          <Image
-            src="/personagens/personagem_3_new.png"
-            alt=""
-            width={2003}
-            height={2518}
-            className="w-full h-auto"
-          />
-        </div>
-        {/* Personagem 2a — centro, na frente (último no DOM) */}
-        <div
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[30%] sm:w-[25%] lg:w-[22%]"
-          style={{ mixBlendMode: 'screen' }}
-        >
-          <Image
-            src="/personagens/personagem_2a_new.png"
-            alt=""
-            width={1679}
-            height={2753}
-            className="w-full h-auto"
+            className="h-[52vh] w-auto"
           />
         </div>
       </div>
 
       {/* Conteúdo central — logos */}
-      <div className="relative z-20 flex-1 flex flex-col items-center justify-center pt-24 pb-[32vh] px-6 text-center">
+      <div className="relative z-20 flex-1 flex flex-col items-center justify-end pt-24 pb-12 px-6">
 
-        {/* 8ª Edição badge */}
+        {/* Linha central: 8a_oitava | logo_festival | 26_a_29_marco */}
         <div
-          className="opacity-0"
-          style={{ animation: 'fadeUp 0.7s 0.1s ease forwards' }}
+          className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8 opacity-0"
+          style={{ animation: 'fadeUp 0.75s 0.15s ease forwards' }}
         >
+          {/* 8ª — esquerda */}
           <Image
             src="/logo/8a_oitava_new.png"
             alt="8ª Edição"
             width={476}
             height={501}
-            className="w-auto h-auto max-h-[56px] sm:max-h-[72px] lg:max-h-[88px] mx-auto mb-3"
+            className="w-auto h-auto max-h-[70px] sm:max-h-[90px] lg:max-h-[110px] flex-shrink-0"
           />
-        </div>
 
-        {/* Logo festival — elemento principal */}
-        <div
-          className="opacity-0"
-          style={{ animation: 'fadeUp 0.75s 0.22s ease forwards' }}
-        >
-          <Image
-            src="/logo/logo_festival_new.png"
-            alt="Festival Bahia de Todas as Cores"
-            width={750}
-            height={1151}
-            priority
-            className="w-auto h-auto max-h-[240px] sm:max-h-[320px] lg:max-h-[400px] mx-auto"
-          />
-        </div>
+          {/* Logo festival + Salvador Bahia — centro */}
+          <div className="flex flex-col items-center">
+            <Image
+              src="/logo/logo_festival_new.png"
+              alt="Festival Bahia de Todas as Cores"
+              width={750}
+              height={1151}
+              priority
+              className="w-auto h-auto max-h-[220px] sm:max-h-[300px] lg:max-h-[380px]"
+            />
+            <Image
+              src="/logo/salvador_bahia_new.png"
+              alt="Salvador, Bahia"
+              width={924}
+              height={99}
+              className="w-auto h-auto max-w-[160px] sm:max-w-[210px] lg:max-w-[260px] mt-3"
+            />
+          </div>
 
-        {/* Salvador Bahia */}
-        <div
-          className="mt-5 opacity-0"
-          style={{ animation: 'fadeUp 0.75s 0.4s ease forwards' }}
-        >
+          {/* 26 a 29 de Março — direita */}
           <Image
-            src="/logo/salvador_bahia_new.png"
-            alt="Salvador, Bahia"
-            width={924}
-            height={99}
-            className="w-auto h-auto max-w-[190px] sm:max-w-[250px] lg:max-w-[310px] mx-auto"
+            src="/logo/26_a_29_marco_new.png"
+            alt="26 a 29 de Março"
+            width={946}
+            height={508}
+            className="w-auto h-auto max-w-[100px] sm:max-w-[140px] lg:max-w-[180px] flex-shrink-0"
           />
         </div>
       </div>
@@ -144,15 +130,8 @@ export default function Hero() {
           borderColor: 'rgba(255,255,255,0.07)',
         }}
       >
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-10 py-4 flex flex-wrap items-center justify-between gap-4">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-10 py-4 flex items-center justify-center">
           <Countdown />
-          <a
-            href="#artistas"
-            className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-btc-lima/70 hover:text-btc-lima border border-btc-lima/25 hover:border-btc-lima/60 px-4 py-2 transition-all duration-200 ml-auto"
-            style={{ borderRadius: '2px' }}
-          >
-            50 artistas selecionados →
-          </a>
         </div>
       </div>
     </section>
