@@ -55,6 +55,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo'],
     bio: 'Aurora Campbell é uma artista visual nascida na Austrália que dedica sua prática à ressignificação do espaço público através de intervenções de grande escala. Seu trabalho é marcado por uma estética audaciosa e gráfica, onde o uso estratégico de contrastes cromáticos e a riqueza de detalhes intrincados criam obras emotivas e vibrantes. Com uma trajetória sólida de mais de dez anos, Aurora consolidou sua presença na cena artística australiana, assinando murais para importantes conselhos municipais, festivais de arte e instituições culturais. Sua produção é reconhecida por um estilo distintivo que equilibra o impacto visual imediato com uma abordagem "site-responsive" — uma sensibilidade única que permite que cada obra dialogue e responda às particularidades do ambiente onde está inserida.',
+    foto: '/artistas/aurora-campbell.jpg',
     destaque: true,
   },
   {
@@ -233,6 +234,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Hiperrealismo', 'Muralismo'],
     bio: 'Frudyaren é artista visual e muralista do México com 15 anos de trajetória dedicados à transformação do espaço público. Especialista em realismo com foco no hiperrealismo, sua obra possui um selo único que equilibra uma estética sombria à celebração da biodiversidade. Através de murais monumentais, Frudyaren cria diálogos visuais poderosos que capturam a essência da vida em detalhes impressionantes, reafirmando o papel da arte pública como uma experiência imersiva e provocativa.',
+    foto: '/artistas/frudyaren.png',
     destaque: true,
   },
   {
@@ -253,6 +255,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo', 'Graffiti'],
     bio: 'Formada pela Faculdade de Artes e Design da UNAM (México), Marsella é uma artista visual e muralista. Sua obra, que transita entre a pintura, a gravura e o graffiti, explora a magia do feminino na natureza e a dimensão onírica das culturas pré-hispânicas. Com uma trajetória marcada por projetos comunitários de grande escala com a organização MéxicoBienHecho, Marsella une o rigor acadêmico à sensibilidade social, transformando muros em portais de memória e identidade.',
+    foto: '/artistas/marsella-malorie.png',
     destaque: true,
   },
   {
@@ -284,6 +287,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Stencil', 'Artivismo'],
     bio: 'StenSilvania é uma muralista, artivista e educadora argentina com uma sólida trajetória iniciada em 2008. Especialista em stencil de grande formato, sua obra é uma ferramenta de resistência e memória, focada em Direitos Humanos e envolvimento comunitário. Com experiência internacional e atuação em políticas públicas culturais, ela transforma muros em plataformas de luta e diálogo social, unindo a técnica urbana ao compromisso com a justiça e a diversidade.',
+    foto: '/artistas/stensilvania.jpg',
     destaque: true,
   },
   {
@@ -319,6 +323,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Hiperrealismo', 'Muralismo'],
     bio: 'Andrii Palval é muralista especializado em fotorrealismo de aves e animais. Nascido em 1983 em Kiev, na Ucrânia, e hoje radicado em St. Catharines, no Canadá, sua obra ocupa muros em países como França, Alemanha, China, Paquistão e Vietnã. Com participações em festivais globais como o Waterford Mural Fest, Meeting of Styles (Wiesbaden e Los Angeles) e o projeto A Mural Project, Palval, através de uma técnica que captura a essência da biodiversidade, consegue conectar diferentes culturas através de uma linguagem visual universal e hiper detalhada.',
+    foto: '/artistas/palval.png',
     destaque: true,
   },
   {
@@ -341,6 +346,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Wildstyle', '3D'],
     bio: 'Aspeaks é um grafiteiro chileno que domina a complexidade do Wildstyle através de uma técnica impecável de tridimensionalidade (3D). Natural do Chile e com uma circulação expressiva na cena sul-americana, sua obra é marcada pelo dinamismo e pela profundidade das letras, transformando muros em composições de alto impacto visual. Com participação de destaque no Acre Graffiti, Aspeaks consolida sua trajetória internacional, unindo a força da escola chilena à energia vibrante da arte urbana brasileira.',
+    foto: '/artistas/aspeaks.png',
     destaque: true,
   },
   {
@@ -526,6 +532,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Wildstyle', 'Lettering'],
     bio: 'Mehdi, mais conhecido como Same One, é um artista de graffiti argelino que, desde 2010, vem moldando a paisagem urbana com sua maestria no Wildstyle. Especialista em letras, conexões dinâmicas e estruturas entrelaçadas, ele eleva o graffiti a uma forma de arquitetura visual. Com mais de uma década de trajetória na cena da Argélia, Same One combina a herança cultural do norte da África com a estética global do Hip Hop.',
+    foto: '/artistas/same-one.jpg',
     destaque: true,
   },
   {
@@ -547,6 +554,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Muralismo'],
     bio: 'Sebastian é um artista visual e muralista com uma sólida trajetória internacional, tendo levado sua arte a sete países através de festivais de renome como o Meeting of Styles (Alemanha, Suécia, Finlândia, Jamaica, entre outros). Sua obra é uma busca pela harmonia entre a estética urbana e a natureza, transformando muros em palcos de experimentação técnica e visual, com peças dinâmicas e ricas em nuances de cor.',
+    foto: '/artistas/scmart.png',
     destaque: true,
   },
   {
@@ -569,6 +577,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Muralismo'],
     bio: 'Zoinky é um muralista internacional cuja obra é uma tapeçaria vibrante tecida a partir de suas jornadas globais. Nascido em Honolulu, Havaí, e com murais pintados em 21 países — do Reino Unido à Austrália —, seu trabalho reflete uma perspectiva dinâmica e diversa. Conhecido por uma paleta de cores intensas e audaciosas, Zoinky abre portais onde criaturas se entrelaçam com formas abstratas e a delicada beleza de elementos florais, criando uma linguagem visual que celebra a interconectividade universal entre a natureza, a imaginação e a experiência humana.',
+    foto: '/artistas/zoinky.png',
     destaque: true,
   },
 ]
