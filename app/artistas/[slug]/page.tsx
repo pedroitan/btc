@@ -44,6 +44,9 @@ export default function ArtistaPage({ params }: Props) {
 
   const color = slugColor(artista.slug)
   const ini = initials(artista.nome)
+  const indexAtual = artistas.findIndex((a) => a.slug === artista.slug)
+  const proximo = artistas[indexAtual + 1]
+  const anterior = artistas[indexAtual - 1]
   const location = artista.estado
     ? `${artista.cidade}, ${artista.estado}`
     : artista.pais !== 'Brasil'
@@ -51,10 +54,6 @@ export default function ArtistaPage({ params }: Props) {
       ? artista.pais
       : `${artista.cidade}, ${artista.pais}`
     : artista.cidade
-
-  const indexAtual = artistas.findIndex((a) => a.slug === artista.slug)
-  const proximo = artistas[indexAtual + 1]
-  const anterior = artistas[indexAtual - 1]
 
   return (
     <>
@@ -240,6 +239,7 @@ export default function ArtistaPage({ params }: Props) {
               </Link>
             ) : <span />}
           </div>
+
         </div>
       </div>
     </>

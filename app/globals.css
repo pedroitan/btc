@@ -44,6 +44,11 @@
 html {
   scroll-behavior: smooth;
   font-size: 17px;
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
 }
 
 @keyframes fadeUp {
