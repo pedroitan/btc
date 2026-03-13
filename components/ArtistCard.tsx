@@ -132,14 +132,6 @@ export default function ArtistCard({ artista }: Props) {
               {e}
             </span>
           ))}
-          {artista.destaque && (
-            <span
-              className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-btc-magenta/90 border border-btc-magenta/30 px-1.5 py-0.5"
-              style={{ borderRadius: '2px' }}
-            >
-              Destaque
-            </span>
-          )}
           {artista.pais !== 'Brasil' && (
             <span
               className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-btc-laranja/80 border border-btc-laranja/25 px-1.5 py-0.5"

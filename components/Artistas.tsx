@@ -6,7 +6,7 @@ import { artistas, type Estilo } from '@/data/artistas'
 import ArtistCard from './ArtistCard'
 
 const ESTILOS: Estilo[] = [
-  'Muralismo', 'Graffiti', 'Wildstyle', 'Lettering', 'Throw-up',
+  'Muralismo', 'Wildstyle', 'Lettering', 'Throw-up',
   'Stencil', 'Realismo', 'Cartoon', 'Ilustração', '3D',
   'Hiperrealismo', 'Artivismo', 'String Art', 'Semi-realismo',
 ]
