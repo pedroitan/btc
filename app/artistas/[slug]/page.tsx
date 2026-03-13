@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import Image from 'next/image'
 import type { Metadata } from 'next'
 import { artistas } from '@/data/artistas'
 import Navbar from '@/components/Navbar'
@@ -83,7 +82,7 @@ export default function ArtistaPage({ params }: Props) {
           </span>
 
           {/* Foto — cobre todo o hero */}
-          {artista.foto && <ArtistHero foto={artista.foto} nome={artista.nome} color={color} />}
+          {artista.foto && <ArtistHero foto={artista.foto} nome={artista.nome} />}
 
           <div className="relative z-10 max-w-[1400px] mx-auto w-full px-6 pt-32 pb-10">
             <Link

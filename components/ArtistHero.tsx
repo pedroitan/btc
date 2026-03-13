@@ -6,10 +6,9 @@ import Image from 'next/image'
 interface Props {
   foto: string
   nome: string
-  color: string
 }
 
-export default function ArtistHero({ foto, nome, color }: Props) {
+export default function ArtistHero({ foto, nome }: Props) {
   const [open, setOpen] = useState(false)
 
   return (
