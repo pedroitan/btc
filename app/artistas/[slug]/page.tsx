@@ -47,7 +47,9 @@ export default function ArtistaPage({ params }: Props) {
   const location = artista.estado
     ? `${artista.cidade}, ${artista.estado}`
     : artista.pais !== 'Brasil'
-    ? `${artista.cidade}, ${artista.pais}`
+    ? artista.cidade === artista.pais
+      ? artista.pais
+      : `${artista.cidade}, ${artista.pais}`
     : artista.cidade
 
   const indexAtual = artistas.findIndex((a) => a.slug === artista.slug)
