@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useMemo, useCallback, Suspense } from 'react'
+import { useSearchParams, useRouter } from 'next/navigation'
 import { artistas, type Estilo } from '@/data/artistas'
 import ArtistCard from './ArtistCard'
 
@@ -13,10 +14,25 @@ const ESTILOS: Estilo[] = [
 type Genero = 'todos' | 'feminino' | 'masculino'
 type Origem = 'todos' | 'nacionais' | 'internacionais'
 
-export default function Artistas() {
-  const [estilo, setEstilo] = useState<Estilo | 'todos'>('todos')
-  const [genero, setGenero] = useState<Genero>('todos')
-  const [origem, setOrigem] = useState<Origem>('todos')
+function ArtistasInner() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+
+  const estilo = (searchParams.get('estilo') as Estilo | 'todos') ?? 'todos'
+  const genero = (searchParams.get('genero') as Genero) ?? 'todos'
+  const origem = (searchParams.get('origem') as Origem) ?? 'todos'
+
+  const setFilter = useCallback((key: string, value: string) => {
+    const params = new URLSearchParams(searchParams.toString())
+    if (value === 'todos') params.delete(key)
+    else params.set(key, value)
+    const qs = params.toString()
+    router.replace(`/${qs ? '?' + qs : ''}#artistas`, { scroll: false })
+  }, [searchParams, router])
+
+  const setEstilo = (v: Estilo | 'todos') => setFilter('estilo', v)
+  const setGenero = (v: Genero) => setFilter('genero', v)
+  const setOrigem = (v: Origem) => setFilter('origem', v)
 
   const filtrados = useMemo(() => {
     return artistas.filter((a) => {
@@ -143,5 +159,13 @@ export default function Artistas() {
         )}
       </div>
     </section>
+  )
+}
+
+export default function Artistas() {
+  return (
+    <Suspense>
+      <ArtistasInner />
+    </Suspense>
   )
 }

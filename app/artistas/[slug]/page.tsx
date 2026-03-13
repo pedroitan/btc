@@ -4,6 +4,7 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 import { artistas } from '@/data/artistas'
 import Navbar from '@/components/Navbar'
+import ArtistHero from '@/components/ArtistHero'
 
 interface Props {
   params: { slug: string }
@@ -81,12 +82,8 @@ export default function ArtistaPage({ params }: Props) {
             {ini}
           </span>
 
-          {/* Foto ou placeholder */}
-          {artista.foto && (
-            <div className="absolute right-0 bottom-0 w-72 h-full max-w-[40vw]" style={{ mixBlendMode: 'screen' }}>
-              <Image src={artista.foto} alt={artista.nome} fill className="object-contain object-bottom" sizes="40vw" />
-            </div>
-          )}
+          {/* Foto — cobre todo o hero */}
+          {artista.foto && <ArtistHero foto={artista.foto} nome={artista.nome} color={color} />}
 
           <div className="relative z-10 max-w-[1400px] mx-auto w-full px-6 pt-32 pb-10">
             <Link
@@ -97,7 +94,7 @@ export default function ArtistaPage({ params }: Props) {
             </Link>
 
             <div className="flex flex-wrap items-end gap-6">
-              {/* Foto placeholder */}
+              {/* Placeholder sem foto */}
               {!artista.foto && (
                 <div
                   className="w-24 h-24 flex-shrink-0 flex items-center justify-center"
