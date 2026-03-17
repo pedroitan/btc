@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Capa — desktop */}
       <div className="relative w-full hidden sm:block">
         <Image
-          src="/bg/capa_site.png"
+          src="/bg/capa_site.webp"
           alt="Festival Bahia de Todas as Cores — 8ª Edição"
           width={1920}
           height={1080}
@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Capa — mobile */}
       <div className="relative w-full sm:hidden">
         <Image
-          src="/bg/capa_site_mobile.png"
+          src="/bg/capa_site_mobile.webp"
           alt="Festival Bahia de Todas as Cores — 8ª Edição"
           width={576}
           height={1024}
