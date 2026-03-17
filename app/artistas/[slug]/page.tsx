@@ -139,9 +139,35 @@ export default function ArtistaPage({ params }: Props) {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Bio */}
             <div className="lg:col-span-2">
-              <p className="font-mono text-[0.62rem] tracking-[0.2em] uppercase text-btc-magenta mb-4">
-                Sobre o artista
-              </p>
+              <div className="flex items-center justify-between mb-4">
+                <p className="font-mono text-[0.62rem] tracking-[0.2em] uppercase text-btc-magenta">
+                  Sobre o artista
+                </p>
+                {artista.instagram && (
+                  <a
+                    href={`https://instagram.com/${artista.instagram.replace('@', '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-mono text-sm text-btc-magenta hover:underline"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <defs>
+                        <radialGradient id="ig-grad" cx="30%" cy="107%" r="150%">
+                          <stop offset="0%" stopColor="#fdf497"/>
+                          <stop offset="10%" stopColor="#fdf497"/>
+                          <stop offset="30%" stopColor="#fd5949"/>
+                          <stop offset="60%" stopColor="#d6249f"/>
+                          <stop offset="90%" stopColor="#285AEB"/>
+                        </radialGradient>
+                      </defs>
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="url(#ig-grad)" strokeWidth="2"/>
+                      <circle cx="12" cy="12" r="4.5" stroke="url(#ig-grad)" strokeWidth="2"/>
+                      <circle cx="17.5" cy="6.5" r="0.5" fill="url(#ig-grad)"/>
+                    </svg>
+                    {artista.instagram}
+                  </a>
+                )}
+              </div>
               <p className="font-sans font-light text-white/70 text-[1.05rem] leading-[1.8] max-w-[68ch]">
                 {artista.bio}
               </p>
@@ -167,22 +193,6 @@ export default function ArtistaPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* Instagram */}
-              {artista.instagram && (
-                <div>
-                  <p className="font-mono text-[0.6rem] tracking-[0.18em] uppercase text-white/30 mb-2">
-                    Instagram
-                  </p>
-                  <a
-                    href={`https://instagram.com/${artista.instagram.replace('@', '')}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-[0.72rem] text-btc-magenta hover:underline"
-                  >
-                    {artista.instagram}
-                  </a>
-                </div>
-              )}
 
               {/* BTC tag */}
               <div
