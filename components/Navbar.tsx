@@ -5,10 +5,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const LINKS = [
-  { href: '#sobre',    label: 'Festival' },
-  { href: '#agenda',   label: 'Agenda'   },
-  { href: '#artistas', label: 'Artistas' },
-  { href: '#local',    label: 'Local'    },
+  { href: '/#sobre',    label: 'Festival' },
+  { href: '/#agenda',   label: 'Agenda'   },
+  { href: '/#artistas', label: 'Artistas' },
+  { href: '/#local',    label: 'Local'    },
 ]
 
 export default function Navbar() {

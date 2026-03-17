@@ -123,7 +123,7 @@ export default function ArtistCard({ artista }: Props) {
           {location}
         </span>
         <div className="flex flex-wrap gap-1 mt-2">
-          {artista.estilos.slice(0, 2).map((e) => (
+          {artista.estilos.filter((e) => e !== 'Graffiti' && e !== 'Muralismo').slice(0, 2).map((e) => (
             <span
               key={e}
               className="font-mono text-[0.68rem] tracking-[0.08em] uppercase text-btc-lima/80 border border-white/15 px-1.5 py-0.5"
