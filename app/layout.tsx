@@ -29,10 +29,10 @@ export const metadata: Metadata = {
       'O maior festival de graffiti do Norte e Nordeste do Brasil. 26 a 29 de março de 2026, Salvador-BA.',
     images: [
       {
-        url: '/logo/logo_festival.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'BTC — Bahia de Todas as Cores · Festival de Graffiti · Salvador 2026',
+        alt: 'BTC — Bahia de Todas as Cores · 8ª Edição · Tecnologia Ancestral · Salvador 2026',
       },
     ],
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'BTC — Bahia de Todas as Cores | Salvador 2026',
     description: 'O maior festival de graffiti do Norte e Nordeste do Brasil. 26–29 março, Salvador-BA.',
-    images: ['/logo/logo_festival.png'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
