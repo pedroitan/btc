@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import { artistas } from '@/data/artistas'
 import Navbar from '@/components/Navbar'
@@ -91,9 +92,22 @@ export default function ArtistaPage({ params }: Props) {
               ← Todos os artistas
             </Link>
 
-            <div className="flex flex-wrap items-end gap-6">
-              {/* Placeholder sem foto */}
-              {!artista.foto && (
+            <div className="flex flex-wrap items-center gap-6">
+              {/* Avatar: fotoPerfil ou placeholder de iniciais */}
+              {artista.fotoPerfil ? (
+                <div
+                  className="w-24 h-24 flex-shrink-0 overflow-hidden"
+                  style={{ border: `1px solid ${color}44`, borderRadius: '2px' }}
+                >
+                  <Image
+                    src={artista.fotoPerfil}
+                    alt={artista.nome}
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              ) : !artista.foto ? (
                 <div
                   className="w-24 h-24 flex-shrink-0 flex items-center justify-center"
                   style={{
@@ -109,7 +123,7 @@ export default function ArtistaPage({ params }: Props) {
                     {ini}
                   </span>
                 </div>
-              )}
+              ) : null}
 
               <div>
                 <h1

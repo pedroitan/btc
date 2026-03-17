@@ -28,7 +28,8 @@ export interface Artista {
   bio: string
   estilos: Estilo[]
   genero: Genero
-  foto?: string          // path relativo em /public/artistas/
+  foto?: string          // path relativo em /public/artistas/ — arte/obra
+  fotoPerfil?: string    // foto de rosto do artista
   instagram?: string
   destaque?: boolean     // artistas internacionais ou de maior projeção
 }
@@ -45,6 +46,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Graffiti', 'Ilustração', 'Muralismo'],
     bio: 'Nascida no Rio de Janeiro, Amora Moreira atua como artista visual, grafiteira e ilustradora. Ao longo de quase uma década, tem desenvolvido uma produção autoral que transita entre diversas linguagens, incluindo colagem, ilustração, graffiti, videoarte e instalação. Sua obra constrói narrativas visuais que exploram temas como memória, afeto e o cotidiano, a partir de uma perspectiva afrodiaspórica. Ela é a mente por trás do conceito "sample visual", inspirada diretamente pelo movimento Hip Hop e pela ancestral filosofia Sankofa, onde ressignifica imagens e símbolos para contar novas histórias. Indicada ao prestigiado Prêmio PIPA 2024, sua arte ilustrou livros, adornou murais em cidades brasileiras e estabeleceu parcerias com marcas globais de renome como Spotify, Sony Music, Red Bull BC One e Adobe 7, consolidando sua posição como uma voz essencial na cena artística contemporânea.',
+    fotoPerfil: '/artistas/amora-moreira.jpg',
     instagram: '@amori.nha',
     destaque: true,
   },
@@ -57,6 +59,7 @@ export const artistas: Artista[] = [
     estilos: ['Muralismo'],
     bio: 'Aurora Campbell é uma artista visual nascida na Austrália que dedica sua prática à ressignificação do espaço público através de intervenções de grande escala. Seu trabalho é marcado por uma estética audaciosa e gráfica, onde o uso estratégico de contrastes cromáticos e a riqueza de detalhes intrincados criam obras emotivas e vibrantes. Com uma trajetória sólida de mais de dez anos, Aurora consolidou sua presença na cena artística australiana, assinando murais para importantes conselhos municipais, festivais de arte e instituições culturais. Sua produção é reconhecida por um estilo distintivo que equilibra o impacto visual imediato com uma abordagem "site-responsive" — uma sensibilidade única que permite que cada obra dialogue e responda às particularidades do ambiente onde está inserida.',
     foto: '/artistas/aurora-campbell.jpg',
+    fotoPerfil: '/artistas/aurora-campbell-perfil.jpg',
     instagram: '@auroracampbellart',
     destaque: true,
   },
@@ -274,6 +277,7 @@ export const artistas: Artista[] = [
     estilos: ['Muralismo', 'Graffiti'],
     bio: 'Formada pela Faculdade de Artes e Design da UNAM (México), Marsella é uma artista visual e muralista. Sua obra, que transita entre a pintura, a gravura e o graffiti, explora a magia do feminino na natureza e a dimensão onírica das culturas pré-hispânicas. Com uma trajetória marcada por projetos comunitários de grande escala com a organização MéxicoBienHecho, Marsella une o rigor acadêmico à sensibilidade social, transformando muros em portais de memória e identidade.',
     foto: '/artistas/marsella-malorie.png',
+    fotoPerfil: '/artistas/marsella-malorie-perfil.jpg',
     instagram: '@m_malorie',
     destaque: true,
   },
@@ -309,6 +313,7 @@ export const artistas: Artista[] = [
     estilos: ['Stencil', 'Artivismo'],
     bio: 'StenSilvania é uma muralista, artivista e educadora argentina com uma sólida trajetória iniciada em 2008. Especialista em stencil de grande formato, sua obra é uma ferramenta de resistência e memória, focada em Direitos Humanos e envolvimento comunitário. Com experiência internacional e atuação em políticas públicas culturais, ela transforma muros em plataformas de luta e diálogo social, unindo a técnica urbana ao compromisso com a justiça e a diversidade.',
     foto: '/artistas/stensilvania.jpg',
+    fotoPerfil: '/artistas/stensilvania-perfil.jpg',
     instagram: '@stensilvania',
     destaque: true,
   },
