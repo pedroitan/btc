@@ -603,6 +603,7 @@ export const artistas: Artista[] = [
     estilos: ['Muralismo'],
     bio: 'Sebastian é um artista visual e muralista com uma sólida trajetória internacional, tendo levado sua arte a sete países através de festivais de renome como o Meeting of Styles (Alemanha, Suécia, Finlândia, Jamaica, entre outros). Sua obra é uma busca pela harmonia entre a estética urbana e a natureza, transformando muros em palcos de experimentação técnica e visual, com peças dinâmicas e ricas em nuances de cor.',
     foto: '/artistas/scmart.png',
+    fotoPerfil: '/artistas/scmart-perfil.jpg',
     instagram: '@s.cmart_',
     destaque: true,
   },
