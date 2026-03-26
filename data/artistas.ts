@@ -165,6 +165,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo'],
     bio: 'Juliana Kainã é uma grafiteira e muralista que atua no cenário urbano do Distrito Federal desde 2018. Sua arte busca ser um canal de expressão para o meio ambiente, trazendo a voz da natureza para o concreto das cidades. Através de murais vibrantes e intervenções urbanas, Juliana reconecta o público com a essência natural.',
+    fotoPerfil: '/artistas/juliana-kaina-perfil.jpg',
     instagram: '@ganjart3',
   },
   {
@@ -618,6 +619,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Realismo', '3D', 'Lettering'],
     bio: 'Strikerfeno é um artista visual e grafiteiro de São Paulo com uma trajetória iniciada em 2006. Reconhecido por sua versatilidade técnica, ele domina do realismo detalhado às letras em 3D, além de criar personagens inspirados na estética digital. Com presença confirmada em festivais como Meeting of Styles, Street of Styles e Origraffes.',
+    fotoPerfil: '/artistas/strikerfeno-perfil.jpg',
     instagram: '@strikerfeno',
   },
   {

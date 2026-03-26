@@ -31,10 +31,10 @@ export default function ArtistCard({ artista }: Props) {
   const location = artista.estado
     ? `${artista.cidade} · ${artista.estado}`
     : artista.pais !== 'Brasil'
-    ? artista.cidade === artista.pais
-      ? artista.pais
-      : `${artista.cidade} · ${artista.pais}`
-    : artista.cidade
+      ? artista.cidade === artista.pais
+        ? artista.pais
+        : `${artista.cidade} · ${artista.pais}`
+      : artista.cidade
 
   return (
     <Link
@@ -48,9 +48,9 @@ export default function ArtistCard({ artista }: Props) {
     >
       {/* Foto ou placeholder */}
       <div className="aspect-[3/4] relative overflow-hidden">
-        {artista.foto ? (
+        {(artista.foto || artista.fotoPerfil) ? (
           <Image
-            src={artista.foto}
+            src={artista.foto ?? artista.fotoPerfil!}
             alt={artista.nome}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -65,10 +65,10 @@ export default function ArtistCard({ artista }: Props) {
             <svg className="absolute inset-0 w-full h-full opacity-[0.07]" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <pattern id={`diag-${artista.slug}`} width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                  <line x1="0" y1="0" x2="0" y2="20" stroke="white" strokeWidth="1"/>
+                  <line x1="0" y1="0" x2="0" y2="20" stroke="white" strokeWidth="1" />
                 </pattern>
               </defs>
-              <rect width="100%" height="100%" fill={`url(#diag-${artista.slug})`}/>
+              <rect width="100%" height="100%" fill={`url(#diag-${artista.slug})`} />
             </svg>
 
             {/* Iniciais — elemento central */}
