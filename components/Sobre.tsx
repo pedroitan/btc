@@ -16,12 +16,12 @@ const stats = [
   { num: '50%+', desc: 'Mulheres selecionadas' },
 ]
 
-const dna = [
-  { titulo: 'Itinerância', desc: 'Cada edição em cidade ou região diferente da Bahia, levando arte a quem raramente tem acesso.' },
-  { titulo: 'Curadoria diversa', desc: 'Inscrição pública com foco em representatividade regional, de gênero e internacional.' },
-  { titulo: 'Mutirão comunitário', desc: 'Pintura coletiva com moradores — a cidade anfitriã participa da transformação.' },
-  { titulo: 'BTC Sound', desc: 'Shows musicais conectando graffiti às raízes do hip-hop e da cultura baiana.' },
-]
+// const dna = [
+//   { titulo: 'Itinerância', desc: 'Cada edição em cidade ou região diferente da Bahia, levando arte a quem raramente tem acesso.' },
+//   { titulo: 'Curadoria diversa', desc: 'Inscrição pública com foco em representatividade regional, de gênero e internacional.' },
+//   { titulo: 'Mutirão comunitário', desc: 'Pintura coletiva com moradores — a cidade anfitriã participa da transformação.' },
+//   { titulo: 'BTC Sound', desc: 'Shows musicais conectando graffiti às raízes do hip-hop e da cultura baiana.' },
+// ]
 
 export default function Sobre() {
   return (
