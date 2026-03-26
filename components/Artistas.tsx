@@ -1,7 +1,6 @@
 'use client'
 
-import { useMemo, useCallback, Suspense } from 'react'
-import { useSearchParams, useRouter } from 'next/navigation'
+import { useMemo, useState, Suspense } from 'react'
 import { artistas, type Estilo } from '@/data/artistas'
 import ArtistCard from './ArtistCard'
 
@@ -15,24 +14,9 @@ type Genero = 'todos' | 'feminino' | 'masculino'
 type Origem = 'todos' | 'nacionais' | 'internacionais'
 
 function ArtistasInner() {
-  const searchParams = useSearchParams()
-  const router = useRouter()
-
-  const estilo = (searchParams.get('estilo') as Estilo | 'todos') ?? 'todos'
-  const genero = (searchParams.get('genero') as Genero) ?? 'todos'
-  const origem = (searchParams.get('origem') as Origem) ?? 'todos'
-
-  const setFilter = useCallback((key: string, value: string) => {
-    const params = new URLSearchParams(searchParams.toString())
-    if (value === 'todos') params.delete(key)
-    else params.set(key, value)
-    const qs = params.toString()
-    router.replace(`/${qs ? '?' + qs : ''}#artistas`, { scroll: false })
-  }, [searchParams, router])
-
-  const setEstilo = (v: Estilo | 'todos') => setFilter('estilo', v)
-  const setGenero = (v: Genero) => setFilter('genero', v)
-  const setOrigem = (v: Origem) => setFilter('origem', v)
+  const [estilo, setEstilo] = useState<Estilo | 'todos'>('todos')
+  const [genero, setGenero] = useState<Genero>('todos')
+  const [origem, setOrigem] = useState<Origem>('todos')
 
   const filtrados = useMemo(() => {
     return artistas.filter((a) => {
@@ -73,11 +57,10 @@ function ArtistasInner() {
           <div className="flex flex-wrap gap-1.5">
             <button
               onClick={() => setEstilo('todos')}
-              className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
-                estilo === 'todos'
+              className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${estilo === 'todos'
                   ? 'bg-btc-magenta border-btc-magenta text-white'
                   : 'border-white/20 text-white/50 hover:border-white/50 hover:text-white'
-              }`}
+                }`}
               style={{ borderRadius: '2px' }}
             >
               Todos
@@ -86,11 +69,10 @@ function ArtistasInner() {
               <button
                 key={e}
                 onClick={() => setEstilo(estilo === e ? 'todos' : e)}
-                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
-                  estilo === e
+                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${estilo === e
                     ? 'bg-btc-lima/90 border-btc-lima text-btc-preto'
                     : 'border-white/20 text-white/50 hover:border-btc-lima/50 hover:text-btc-lima'
-                }`}
+                  }`}
                 style={{ borderRadius: '2px' }}
               >
                 {e}
@@ -106,11 +88,10 @@ function ArtistasInner() {
               <button
                 key={g}
                 onClick={() => setGenero(g)}
-                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
-                  genero === g
+                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${genero === g
                     ? 'bg-btc-laranja/90 border-btc-laranja text-white'
                     : 'border-white/20 text-white/50 hover:border-btc-laranja/50 hover:text-btc-laranja'
-                }`}
+                  }`}
                 style={{ borderRadius: '2px' }}
               >
                 {g === 'todos' ? 'Todos' : g === 'feminino' ? 'Mulheres' : 'Homens'}
@@ -124,11 +105,10 @@ function ArtistasInner() {
               <button
                 key={o}
                 onClick={() => setOrigem(o)}
-                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${
-                  origem === o
+                className={`font-mono text-[0.8rem] tracking-[0.1em] uppercase px-3 py-1.5 border transition-all duration-150 ${origem === o
                     ? 'bg-white/90 border-white text-btc-preto'
                     : 'border-white/20 text-white/50 hover:border-white/50 hover:text-white'
-                }`}
+                  }`}
                 style={{ borderRadius: '2px' }}
               >
                 {o === 'todos' ? 'Origem: Todos' : o === 'nacionais' ? 'Nacionais' : 'Internacionais'}

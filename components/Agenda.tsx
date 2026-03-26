@@ -62,9 +62,6 @@ export default function Agenda() {
               Salvador <span className="font-mono">2026</span>
             </span>
           </h2>
-          <p className="font-mono text-[0.75rem] tracking-[0.12em] uppercase text-white/35 mt-3">
-            25 a 30 de Março · Programação sujeita a alterações
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.06]" style={{ border: '1px solid rgba(255,255,255,0.06)' }}>
