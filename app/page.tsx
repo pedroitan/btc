@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Sobre from '@/components/Sobre'
 import Artistas from '@/components/Artistas'
-// import Agenda from '@/components/Agenda'
+import Agenda from '@/components/Agenda'
 // import Tema from '@/components/Tema'
 // import Local from '@/components/Local'
 import Footer from '@/components/Footer'
@@ -41,7 +41,7 @@ export default function Home() {
         <Sobre />
         {/* <Tema /> */}
         <Artistas />
-        {/* <Agenda /> */}
+        <Agenda />
         {/* <Local /> */}
       </main>
       <Footer />

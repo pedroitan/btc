@@ -7,6 +7,7 @@ import Image from 'next/image'
 const LINKS = [
   { href: '/#sobre', label: 'Festival' },
   { href: '/#artistas', label: 'Artistas' },
+  { href: '/#agenda', label: 'Agenda' },
 ]
 
 export default function Navbar() {
