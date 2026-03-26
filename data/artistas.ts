@@ -245,6 +245,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Cartoon', 'Graffiti'],
     bio: 'Maju Esteves é uma grafiteira e arte-educadora de Londrina, que une a expressividade do teatro à força da arte urbana. Criadora da personagem Frankie — uma Frankenstein fragmentada que carrega seus sonhos e desejos —, ela utiliza o lúdico do estilo cartoon para promover a representatividade feminina nos muros. Com uma trajetória iniciada no projeto do coletivo Capstyle, Maju hoje integra o graffiti à sua prática pedagógica, levando sua arte de Londrina até o sertão do Cariri, no festival "Oxê" (CE).',
+    instagram: '@majuesteves.art',
   },
   {
     slug: 'frudyaren',
