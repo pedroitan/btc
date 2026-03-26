@@ -73,6 +73,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo', 'String Art'],
     bio: 'Ayala é artista artesã e muralista, natural do Belém do Pará, ela une a delicadeza da string art à força da arte urbana. Transitando entre fios, tintas e pixels, sua obra celebra a exuberância da Amazônia e a potência do universo feminino. Com destaque no MAUB 2025 (Museu de Arte Urbana de Belém), Ayala cria narrativas visuais que conectam o saber ancestral ao cenário contemporâneo, transformando espaços públicos em portais de memória e afeto.',
+    fotoPerfil: '/artistas/ayala-perfil.jpg',
     instagram: '@ayalajessyca',
   },
   {
@@ -85,6 +86,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo'],
     bio: 'Bárbara Stéphanie, também conhecida como Barbaridad, é uma artista visual e muralista de Jacobina, Bahia, com forte atuação também no Vale do São Francisco. Seu trabalho se destaca pela figuração simbólica e pelo desenho intuitivo, resultando em pinturas murais que estabelecem um diálogo profundo com a identidade local, o território e o espaço coletivo. Sua produção integrou a programação de eventos da cena urbana brasileira, incluindo o Beira Festival em Petrolina (PE), o GRAFFGESSO em Araripina (PE), o ORIGRAFFES em Serra (ES) e o Festival Amadonidxs na Ilha de Mosqueiro (PA). Além disso, foi selecionada para o prestigiado projeto Riscos nas Ruas, em São Paulo (SP), marcando sua presença em diferentes contextos geográficos e culturais do país.',
+    fotoPerfil: '/artistas/barbara-stephanie-perfil.jpg',
     instagram: '@barbaridad.studio',
   },
   {
@@ -97,6 +99,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Lettering', 'Graffiti'],
     bio: 'Blue é uma artista visual e grafiteira de Parnamirim-RN que, ao longo de 11 anos de trajetória, vem construindo uma linguagem única baseada no intercâmbio constante de conhecimentos. Reconhecida por sua habilidade em fundir letreiramentos dinâmicos com a criação de personagens autorais, sua obra destaca-se por um protagonista sem gênero ou cor definida — uma figura universal que desafia rótulos e convida à identificação plural. Com presença marcante em festivais de referência como Graffiti Queens, Africores e Cores Femininas, Blue personifica a força da arte urbana potiguar em constante movimento pelo Brasil.',
+    fotoPerfil: '/artistas/blue-perfil.jpg',
     instagram: '@bluegraff',
   },
   {
@@ -108,6 +111,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Wildstyle', 'Muralismo'],
     bio: 'Desde 2020, Brisa da Noite atua como grafiteira e muralista, sua prática artística se manifesta em murais, graffitis, oficinas educativas e produções culturais. Sua versatilidade abrange desde o estilo wildstyle de letras até a criação de cenários imersivos e retratos expressivos. Em sua pesquisa artística, Brisa busca exaltar a dualidade entre luz e sombra, a tensão entre natureza e sociedade, e a beleza dos fenômenos eletromagnéticos que permeiam a atmosfera terrestre. Sua trajetória é marcada pela participação em festivais nacionais e internacionais, como Street of Styles, Meeting of Styles, Capstyle, Colorindo a Rua, Vida nos Muros, Máximo Aerosol Festival e Street Art Tour Floripa.',
+    fotoPerfil: '/artistas/brisa-da-noite-perfil.jpg',
     instagram: '@brisadanoite.art',
   },
   {
@@ -120,6 +124,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo', 'Ilustração'],
     bio: 'Gi Brandão é uma artista urbana, tatuadora, ilustradora e arquiteta, pioneira do grafite feminino em Dourados (MS) e em todo o Mato Grosso do Sul. Iniciou sua carreira no final da década de 80 com o lendário grupo Aerosol, deixando sua marca em diversas áreas urbanas, especialmente em São Paulo. Com exposições nos EUA e obras na Alemanha e Portugal, Gi Brandão dedica-se hoje à arte urbana em Dourados, inspirando-se na cultura Hip Hop e sul-mato-grossense para democratizar a arte, abordando temas como cultura indígena, preservação da fauna e da natureza, com a mulher como protagonista.',
+    fotoPerfil: '/artistas/gi-brandao-perfil.jpg',
     instagram: '@gibrandaoart',
   },
   {
@@ -131,6 +136,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Graffiti', 'Artivismo'],
     bio: 'Ira é uma artista grafiteira que utiliza a arte urbana como ferramenta de ativismo. Iniciou sua trajetória em 2023 através do coletivo "Assaltos Poéticos", focado em movimentos sociais, e desde então dedica sua obra a enaltecer e conscientizar sobre a causa animal. Ira já levou sua arte a festivais de renome como Acre Graffiti, GraffGesso e Serrinha In Cores, transformando muros em plataformas de defesa e respeito aos animais.',
+    fotoPerfil: '/artistas/ira-perfil.jpg',
     instagram: '@graffitira',
   },
   {
@@ -143,6 +149,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo', 'Graffiti'],
     bio: 'Isadora Alecrim é uma artista visual, tatuadora e designer que transita com fluidez entre a pele, o óleo e o muro. Graduada em Design Gráfico pela UFBA, ela une a precisão técnica do branding à estética urbana e à tatuagem neotradicional. À frente do Estúdio Veredas há sete anos, Isadora também atua no graffiti há dois anos, onde se desdobra entre murais de grande escala e o projeto autoral de intervenção urbana assinado como Azzi.',
+    fotoPerfil: '/artistas/isa-alecrim-perfil.jpg',
     instagram: '@alecrimisa_',
   },
   {
@@ -154,6 +161,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Graffiti', 'Artivismo'],
     bio: 'Isa Muriá é uma grafiteira e artivista de Curuçá (PA) com onze anos de vivência na arte urbana. Integrante do coletivo Freedas Crew, sua obra estabelece um diálogo profundo entre rios e ruas, natureza e urbano, através de personas que carregam a força da identidade amazônica. Com uma trajetória sólida no artivismo indígena e ambiental, Isa utiliza o graffiti como ferramenta de resistência e reconexão com o território.',
+    fotoPerfil: '/artistas/isa-muria-perfil.jpg',
     instagram: '@isa.muria',
   },
   {
@@ -178,6 +186,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Cartoon', 'Graffiti'],
     bio: 'Kel é uma artista autodidata e pioneira do graffiti no Ceará, transformando as ruas desde 2008. Com um estilo vibrante focado em personagens (cartoon), sua arte é um manifesto de resistência e força feminina. Conciliando a jornada de mãe, profissional e artista, Kel utiliza os muros para dar voz às "Super Mulheres" da vida real, provando que a arte urbana é um território de superação e vitalidade em meio à loucura do cotidiano.',
+    fotoPerfil: '/artistas/kel-perfil.jpg',
     instagram: '@kelgraffitice',
   },
   {
@@ -189,6 +198,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Lettering', 'Realismo'],
     bio: 'Kint é uma artista urbana e arquiteta que une o rigor técnico do urbanismo à energia da cultura Hip Hop. Com uma produção que transita entre a escrita clássica do graffiti e representações realistas de rostos e animais, sua arte transforma o espaço público através de uma fusão entre o traço e a forma. Atuando há pouco mais de dois anos como fazedora de cultura, Kint consolida sua presença em murais e eventos locais, ressignificando a cidade com precisão e atitude.',
+    fotoPerfil: '/artistas/kint-perfil.jpg',
     instagram: '@artezzrevel',
   },
   {
@@ -200,6 +210,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Lettering', 'Throw-up'],
     bio: 'Leka é uma artista urbana de Belo Horizonte que transforma vivências cotidianas em um graffiti de instinto feroz e estética "muleka". Iniciada na pixação e consolidada no spray desde 2018, integra a crew Corre das Mina, onde pesquisa letras e o estilo throw-up com foco no protagonismo feminino. Sua arte, que transita entre muros, telas e o design vetorial, une a intensidade da cultura Hip Hop a uma sensibilidade autoral marcada por movimento e emoção.',
+    fotoPerfil: '/artistas/leka-perfil.jpg',
     instagram: '@leandra_leka_dif',
   },
   {
@@ -212,6 +223,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo', 'Ilustração'],
     bio: 'Lia é uma grafiteira e muralista com duas décadas de trajetória na arte urbana. Iniciada em Itu, no interior de São Paulo, em 2006, consolidou um estilo vibrante e lúdico, marcado por mulheres multicoloridas e seres fantásticos. Sua obra é uma explosão de cores e elementos fantasiosos, onde o traço marcante e a estética autoral transformam o concreto em janelas para universos lúdicos e expressivos.',
+    fotoPerfil: '/artistas/lia-fenix-perfil.jpg',
     instagram: '@liafenix',
   },
   {
@@ -223,6 +235,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo', 'Ilustração'],
     bio: 'Lu Bicalho é ilustradora e muralista, formada em Comunicação Social pela Universidade Federal do Espírito Santo (UFES), estudou Design Gráfico na Universidade do Estado de Santa Catarina (UDESC) e na Universidad de Buenos Aires (UBA) — Argentina. Trabalha na área das artes visuais desde 2003 e ilustração desde 2011. Ministrou oficinas de livro ilustrado e desenho, revistas e livros infantis para vários países, participou de exposições nacionais e internacionais e de eventos de ilustração. Na arte urbana, atua desde 2016, tendo participado de vários eventos nacionais, como Origraffes, Delas, Jacuba, Graffiti Plan, Street of Style, Sisal e Tinta e Graffiti Queens. Na produção autoral, seu universo visual traduz, por meio de cores, formas, texturas e volumes, a dualidade entre a fluidez da água e a solidez dos muros, entre a delicadeza do gesto e a força do traço. Em suas obras, um grito de emoções silenciosas que encontra a serenidade da natureza: ondas, ventos e cores que respiram em meio ao concreto.',
+    fotoPerfil: '/artistas/luciana-bicalho-perfil.jpg',
     instagram: '@lubicalho.art',
   },
   {
@@ -234,6 +247,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Semi-realismo', 'Muralismo'],
     bio: 'Mainã é uma artista visual, grafiteira e ilustradora que utiliza o semi-realismo como ferramenta de representatividade e afeto. Técnica em Artes Visuais e graduanda em Licenciatura pelo IFMA, sua obra foca no protagonismo de mulheres e crianças negras, transformando muros, telas e o digital em espaços de afirmação e beleza. Com participações em festivais como o Kebrada e o Ruas Crew, Mainã consolida uma trajetória que une o rigor acadêmico à potência da cultura urbana.',
+    fotoPerfil: '/artistas/maina-perfil.jpg',
     instagram: '@mainaalvez',
   },
   {
@@ -246,6 +260,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Cartoon', 'Graffiti'],
     bio: 'Maju Esteves é uma grafiteira e arte-educadora de Londrina, que une a expressividade do teatro à força da arte urbana. Criadora da personagem Frankie — uma Frankenstein fragmentada que carrega seus sonhos e desejos —, ela utiliza o lúdico do estilo cartoon para promover a representatividade feminina nos muros. Com uma trajetória iniciada no projeto do coletivo Capstyle, Maju hoje integra o graffiti à sua prática pedagógica, levando sua arte de Londrina até o sertão do Cariri, no festival "Oxê" (CE).',
+    fotoPerfil: '/artistas/maju-esteves-perfil.jpg',
     instagram: '@majuesteves.art',
   },
   {
@@ -268,6 +283,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Graffiti', 'Lettering'],
     bio: 'Manda é grafiteira, muralista e produtora cultural que transforma o espaço público em um território de inclusão e identidade. Com mais de quatro anos de atuação, sua arte celebra a cultura nordestina através de personas autorais e do estilo clássico do Bomb e Blockletters. Co-fundadora do coletivo As Minas Colab e produtora geral do As Minas Pintam, ela une a força do spray ao compromisso com a acessibilidade, democratizando a arte urbana para diversos públicos no Agreste.',
+    fotoPerfil: '/artistas/manda-perfil.jpg',
     instagram: '@_manda_lima',
   },
   {
@@ -292,6 +308,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Cartoon', 'Graffiti'],
     bio: 'Náiade é uma força multifacetada das artes visuais com 13 anos de trajetória. Aos 29 anos, ela transita entre o graffiti (estilo cartoon), o artesanato, a performance e a poesia, levando sua arte por diversos estados do Brasil. Ativista na Frente Nacional de Mulheres no Hip Hop, ela atua como arte-educadora e produtora cultural, liderando coletivos femininos para impulsionar e fortalecer a presença das mulheres no cenário das artes urbanas e da cultura Hip Hop nacional.',
+    fotoPerfil: '/artistas/naiade-perfil.jpg',
     instagram: '@catarina_naiade',
   },
   {
@@ -303,6 +320,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Throw-up', 'Lettering'],
     bio: 'Sage é uma grafiteira mineira que conquistou as ruas de Salvador com a agilidade e a força do estilo Bomb. Com uma trajetória iniciada na dança e no circo, ela encontrou no alfabeto da pixação sua identidade estética, integrando-se definitivamente à cultura Hip Hop. Hoje, como mulher em uma cena majoritariamente masculina, ela transforma o desafio em motivação, afirmando seu espaço através de letras complexas e uma resiliência inabalaável que une o movimento do corpo à precisão do spray.',
+    fotoPerfil: '/artistas/sage-perfil.jpg',
     instagram: '@eu_sage_',
   },
   {
@@ -329,6 +347,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Graffiti', 'Muralismo'],
     bio: 'Wila Caroline é uma artista visual cujo trabalho propõe um diálogo sensível entre o espaço público e as memórias íntimas. Nascida em Petrolina (PE), sua identidade artística é fundamentada na ancestralidade feminina: aprendeu o crochê aos 9 anos com sua mãe, herdando o saber de uma família de tecelãs que transformaram o fio em sustento e resistência. Hoje, Wila funde essa tradição têxtil à força do graffiti, explorando temas como corpo, cotidiano, identidade e sustentabilidade. Sua pesquisa transita pela tridimensionalidade e por processos experimentais, ressignificando materiais para discutir o impacto ambiental e a valorização do território sertanejo. Atuante no Vale do São Francisco, ela utiliza as ruas e as galerias como suportes para narrativas que conectam a delicadeza do ponto de crochê à atitude do spray.',
+    fotoPerfil: '/artistas/wila-perfil.jpg',
     instagram: '@wila.caroline',
   },
   {
@@ -340,6 +359,7 @@ export const artistas: Artista[] = [
     genero: 'feminino',
     estilos: ['Muralismo', 'Artivismo'],
     bio: 'Witch é uma artista visual, arte-educadora e produtora cultural com mais de duas décadas de trajetória no Hip Hop e nas artes urbanas. Sua obra é um manifesto de resistência e afirmação de identidades negras, transformando muros em ferramentas de educação popular e fortalecimento de territórios periféricos. Com circulação em festivais como Acre Graffiti, Encontro de Grafiteiras do Agreste, Festival Nivella, Agora é a Vera, Origraffes, Potigraffiti, São Graffiti, Pão e Tinta e Encontro Cores Femininas, Pri Witch articula criação artística e atuação política, compreendendo a arte como o motor de uma profunda transformação social.',
+    fotoPerfil: '/artistas/witch-perfil.jpg',
     instagram: '@priwitch',
   },
 
@@ -368,6 +388,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Lettering', 'Wildstyle', 'Muralismo'],
     bio: 'Eduardo Aiog iniciou no graffiti em 1996, vindo do pixo, com forte influência das tags cariocas. Seu estilo tem base no lettering e no bomb, passando pelo wildstyle e pela estética old school do graffiti. Atualmente mantém essa base, adicionando personagens, setas e grandes murais, entrelaçando letras e formas com uma estética mais forte, sem abandonar suas origens. Atua no Centro-Oeste como produtor cultural, fomentando diversos espaços públicos. Idealizou e produziu as 3 edições do Festival Beco no Beco da Codorna, que desde 2015 revitalizou o local, transformando-o na maior galeria a céu aberto do Centro-Oeste. Também criou a primeira galeria de graffiti do Estado de Goiás, abrindo espaço para novos artistas, e produziu o primeiro evento internacional de graffiti de Goiânia.',
+    fotoPerfil: '/artistas/aiog-perfil.jpg',
     instagram: '@aiog96',
   },
   {
@@ -380,6 +401,7 @@ export const artistas: Artista[] = [
     estilos: ['Wildstyle', '3D'],
     bio: 'Aspeaks é um grafiteiro chileno que domina a complexidade do Wildstyle através de uma técnica impecável de tridimensionalidade (3D). Natural do Chile e com uma circulação expressiva na cena sul-americana, sua obra é marcada pelo dinamismo e pela profundidade das letras, transformando muros em composições de alto impacto visual. Com participação de destaque no Acre Graffiti, Aspeaks consolida sua trajetória internacional, unindo a força da escola chilena à energia vibrante da arte urbana brasileira.',
     foto: '/artistas/aspeaks.png',
+    fotoPerfil: '/artistas/aspeaks-perfil.jpg',
     instagram: '@aspeks_colores',
     destaque: true,
   },
@@ -393,6 +415,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Muralismo', 'Ilustração'],
     bio: 'Hilton — mais conhecido como Baga — é um artista visual, MC e tatuador soteropolitano com mais de duas décadas de trajetória no graffiti. Figura notória do underground baiano, sua obra é marcada pela liberdade estética e por uma evolução técnica constante. Membro do coletivo São Caetano Resistência há 15 anos, Baga transita entre a ilustração e o muralismo de grande escala, com participações em festivais icônicos como o Meeting of Favela (RJ) e o Pão e Tinta (PE), transformando o espaço público em um território de arte, cultura e resistência social. As obras de Baga também já foram expostas em cidades de São Paulo, Rio Grande do Norte, Paraíba e Sergipe, provando a força e o alcance de sua linguagem visual.',
+    fotoPerfil: '/artistas/baga-perfil.jpg',
     instagram: '@tracosderua',
   },
   {
@@ -405,6 +428,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Graffiti', 'Lettering'],
     bio: 'Natural de São Paulo e radicado em Candeias (BA), Black Shock é um artista que atua como grafiteiro, empreendedor, ilustrador digital e serígrafo. Bacharelando Interdisciplinar em Humanidades pela UNILAB, sua prática artística é atravessada por temáticas afrocentradas, focando na valorização dos corpos e das identidades negras através de elementos da cultura Hip Hop e da escrita de graffiti. Foi eleito Conselheiro Municipal de Política Cultural de Candeias para o biênio 2024-2026 e é professor oficineiro de graffiti no Colégio da Polícia Militar Francisco Pedro de Oliveira. Em 2021, foi o proponente do projeto PRETU.PERI.GRAFF (Pretos Periféricos do Graffiti), que resultou em um minidocumentário de impacto social sobre a importância da arte de rua nas comunidades de Candeias. Entre seus marcos recentes estão participações no FASC (Sergipe), no festival internacional Agora É Avera (Aracaju), no BTC e projetos com o M.U.S.A.S (Museu de Street Art de Salvador). Premiado pelo edital Aldir Blanc em 2021, Black Shock reafirma o papel da arte urbana como ferramenta pedagógica e política de democratização cultural.',
+    fotoPerfil: '/artistas/black-shock-perfil.jpg',
     instagram: '@blackshockago',
   },
   {
@@ -417,6 +441,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Realismo', 'Muralismo'],
     bio: 'BNK tem cerca de dez anos no cenário da arte urbana e consolidou-se como uma voz essencial do muralismo contemporâneo em São Luís do Maranhão. Sua arte é marcada por um domínio técnico do realismo, onde o uso estratégico e expressivo das cores serve de base para narrativas visuais que dialogam com temas como identidade, memória, ancestralidade e urgências sociais. BNK constrói sua trajetória a partir da rua, compreendendo-a como um espaço de criação, troca e transformação. Seus murais, individuais e coletivos, são intervenções que buscam ressignificar o ambiente urbano e promover o impacto social através da arte. Representante do Maranhão em importantes festivais nacionais e internacionais, como Ruaz (Piauí), Street of Style (Paraná) e encontro nacional União Nacional Crew (Paraná), o artista leva a força da cultura maranhense para novos territórios.',
+    fotoPerfil: '/artistas/bnk-perfil.jpg',
     instagram: '@bnk_graff',
   },
   {
@@ -429,6 +454,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Lettering', 'Throw-up', 'Wildstyle'],
     bio: 'Chucky é um grafiteiro de Aracaju (SE) que dedica sua trajetória à essência da escrita urbana desde 2016. Especialista em lettering, sua obra transita com maestria entre o dinamismo do Throw-up, a força do Bomb e a complexidade do Wildstyle. Com uma circulação expressiva em festivais nacionais de renome, como o Origraffes, Pão e Tinta e Agora é a Vera, Chucky transforma o concreto em um manifesto de estilo e técnica, reafirmando o papel das letras como o pilar fundamental da cultura graffiti.',
+    fotoPerfil: '/artistas/chucky-perfil.jpg',
     instagram: '@artistabrincante',
   },
   {
@@ -441,6 +467,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Cartoon', 'Muralismo'],
     bio: 'Erre é um grafiteiro e muralista de Natal (RN) que transforma a essência das ruas em narrativas visuais marcantes. Iniciado em 2014 nos mutirões periféricos, sua obra funde influências da caricatura e do Urban Sketching (USK) para criar cenários urbanos e personas em cartoon que celebram a identidade popular. Com uma circulação internacional expressiva em festivais como o El Monte Graff e dezenas de eventos nacionais como o Origraffes e Pão e Tinta, Erre é uma voz ativa na cultura urbana, conectando territórios através de um traço autêntico e representativo.',
+    fotoPerfil: '/artistas/erre-perfil.jpg',
     instagram: '@errerodrigo',
   },
   {
@@ -452,6 +479,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Muralismo', 'Cartoon'],
     bio: 'Fábio Flop é um artista urbano com mais de 25 anos de trajetória e murais icônicos espalhados pelo Brasil e pelo mundo. Criador dos Guardiões da Natureza, personagens lúdicos inspirados em vivências junto aos povos originários, sua obra é um manifesto visual em defesa do Planeta Terra. Com presença em festivais internacionais de renome como o Meeting of Styles (MOS) e o Meeting of Favela (MOF), Flop une a maestria do spray a uma mensagem espiritual e ambiental, transformando muros em portais de consciência e proteção.',
+    fotoPerfil: '/artistas/flop-perfil.jpg',
     instagram: '@studioflop',
   },
   {
@@ -464,6 +492,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Wildstyle', 'Throw-up', 'Realismo'],
     bio: 'Hard é artista grafiteiro, nascido em Santo Antônio de Jesus (BA), reconhecido por sua maestria técnica e versatilidade com o spray. Com uma trajetória consolidada no rigor do Wildstyle, sua obra evoluiu para um domínio multifacetado que transita com fluidez entre o dinamismo do Throw-up e a precisão do Realismo. Presença constante no BTC desde 2017 e em festivais de renome como o Origraffes e o GAF, Hard transforma muros em demonstrações de virtuosismo técnico, reafirmando o papel do graffiti como uma linguagem visual sem fronteiras.',
+    fotoPerfil: '/artistas/hard-perfil.jpg',
     instagram: '@hard.cores',
   },
   {
@@ -476,6 +505,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Lettering', 'Wildstyle'],
     bio: 'Iogs é um grafiteiro carioca com mais de duas décadas de trajetória e membro do histórico coletivo Zo Team. Especialista em letras que fundem cores vibrantes e formas dinâmicas, sua obra é uma referência de estilo e técnica no cenário urbano nacional. Com circulação em festivais icônicos como o Meeting of Favela (RJ) e o Origraffes (ES), Iogs transforma o concreto em um manifesto identitário, reafirmando o papel do graffiti carioca como um pilar fundamental da cultura urbana brasileira.',
+    fotoPerfil: '/artistas/iogs-perfil.jpg',
     instagram: '@iogs81',
   },
   {
@@ -499,6 +529,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Wildstyle', '3D', 'Throw-up', 'Realismo'],
     bio: 'Kane é um artista visual e muralista de Campos dos Goytacazes (RJ) reconhecido por seu virtuosismo técnico absoluto no graffiti. Com uma trajetória marcada pela versatilidade, sua obra transita entre a agilidade do Throw-up, a complexidade do Wildstyle, a profundidade do 3D e a precisão do Realismo. Com circulação em festivais globais de renome como o Meeting of Styles (MOS) e o Street of Styles, Kane é uma voz de destaque na cena urbana internacional, transformando muros em demonstrações de técnica e impacto visual.',
+    fotoPerfil: '/artistas/kane-perfil.jpg',
     instagram: '@mais1kane',
     destaque: true,
   },
@@ -512,6 +543,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['3D', 'Wildstyle'],
     bio: 'Natural de Macapá, Kash Alves iniciou na arte urbana em agosto de 2006. Começou com o dinamismo do Throw-up, migrou em 2008 para o Wildstyle e, atualmente, domina o graffiti 3D, técnica que busca tirar as letras da superfície e brincar com a percepção visual. Em 2013, integrou o coletivo 100ID no Espaço Caos Arte Cultura, fomentando as artes de rua através de oficinas e intercâmbios. Em 2015, idealizou o evento MURO VIVO, uma plataforma de liberdade de expressão multidisciplinar. Em 2019, tornou-se um dos idealizadores do Circuito Traços, o primeiro circuito de graffiti do estado do Amapá. Com formação técnica em artes pela instituição Cândido Portinari, expandiu sua linguagem através do personagem Sapo Oswaldo, que aborda a crueza da realidade urbana com ironia e estilo. O reconhecimento internacional veio em 2023, com presença confirmada no Meeting of Styles, na Alemanha.',
+    fotoPerfil: '/artistas/kash-alves-perfil.jpg',
     instagram: '@kashalves_',
   },
   {
@@ -524,6 +556,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Lettering'],
     bio: 'Nikol é um grafiteiro e muralista de Salvador (BA) que dedica sua trajetória à essência da escrita urbana desde 2004. Especialista em lettering, sua obra é um manifesto de estilo e técnica que reflete mais de duas décadas de evolução constante no cenário do graffiti nacional. Com circulação em festivais icônicos como o Meeting of Favela (RJ), Street of Styles (PR), BTC (BA) e GAF (BA), Nikol transforma o concreto em uma plataforma de maestria caligráfica.',
+    fotoPerfil: '/artistas/nikol-perfil.jpg',
     instagram: '@nikolgraffiti',
   },
   {
@@ -536,6 +569,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Realismo', 'Muralismo'],
     bio: 'Leonardo Pessoa é um artista visual e muralista que, a partir do ingresso no Bacharelado em Artes Plásticas da UFBA, passou a conhecer de perto o movimento do graffiti. Radicado em Cachoeira (BA), sua obra é focada na arte figurativa, retratando o cotidiano humano através de uma estética que transita entre o realismo e a identidade vibrante do graffiti. Com atuação profunda no Recôncavo Baiano e participações em festivais como GAF, Agora é a Vera (Aracaju), AJU — Encontro de Graffiti de Aracaju, e Circuito Arte não é Privilégio (Salvador).',
+    fotoPerfil: '/artistas/pessoa-perfil.jpg',
     instagram: '@pessoa.rc',
   },
   {
@@ -547,6 +581,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Wildstyle', 'Realismo'],
     bio: 'Marcio Gabriel, mais conhecido como Pig, é um grafiteiro e muralista que transforma o espaço urbano em um suporte para a memória coletiva. Iniciado no graffiti em 2016, sua obra funde o Wildstyle à sensibilidade de retratos que narram a história de pessoas e lugares. Com circulação nacional em festivais como o Pão e Tinta (PE) e o Calor e Cor (MT), e obras expostas em galerias, Pig une a força das ruas à sofisticação das telas, reafirmando o papel da arte como ferramenta de preservação e identidade cultural.',
+    fotoPerfil: '/artistas/pig-perfil.jpg',
     instagram: '@pig_p.crew',
   },
   {
@@ -558,6 +593,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Realismo', 'Muralismo'],
     bio: 'Rizo é artista visual e muralista que transita entre o graffiti contemporâneo e a pintura narrativa, fundindo o urbano com o sagrado em composições de alto impacto visual. Com uma estética realista-estilizada, sua obra explora atmosferas oníricas e cósmicas, utilizando o camaleão antropomórfico como um alter ego simbólico. Com circulação em festivais mundiais como o Meeting of Styles e o Looper Fest, Rizo cria narrativas autorais onde a ciência, a natureza e a espiritualidade se encontram em paletas vibrantes e iluminação dramática, transformando muros em portais de profunda reflexão e identidade.',
+    fotoPerfil: '/artistas/rizo-perfil.jpg',
     instagram: '@rizo.ci',
   },
   {
@@ -570,6 +606,7 @@ export const artistas: Artista[] = [
     genero: 'masculino',
     estilos: ['Graffiti', 'Ilustração'],
     bio: 'Rafael Oliveira, conhecido como Rolê.89, é um artista multidisciplinar que personifica a cultura de rua através do skate, ilustração e design. Originário de Camaçari-BA e criado em Salvador-BA, sua arte é profundamente enraizada no graffiti e no pixo, combinando essa base com um estilo de ilustração cartoon vibrante. Com uma paixão pela estamparia e moda, Rolê.89 não apenas cria, mas também produz suas próprias peças, transformando suas vivências urbanas em expressões visuais autênticas e de alto impacto.',
+    fotoPerfil: '/artistas/role-perfil.jpg',
     instagram: '@role.89',
   },
   {
@@ -582,6 +619,7 @@ export const artistas: Artista[] = [
     estilos: ['Wildstyle', 'Lettering'],
     bio: 'Mehdi, mais conhecido como Same One, é um artista de graffiti argelino que, desde 2010, vem moldando a paisagem urbana com sua maestria no Wildstyle. Especialista em letras, conexões dinâmicas e estruturas entrelaçadas, ele eleva o graffiti a uma forma de arquitetura visual. Com mais de uma década de trajetória na cena da Argélia, Same One combina a herança cultural do norte da África com a estética global do Hip Hop.',
     foto: '/artistas/same-one.jpg',
+    fotoPerfil: '/artistas/same-one-perfil.jpg',
     instagram: '@same_o.n.e',
     destaque: true,
   },
@@ -632,6 +670,7 @@ export const artistas: Artista[] = [
     estilos: ['Muralismo'],
     bio: 'Zoinky é um muralista internacional cuja obra é uma tapeçaria vibrante tecida a partir de suas jornadas globais. Nascido em Honolulu, Havaí, e com murais pintados em 21 países — do Reino Unido à Austrália —, seu trabalho reflete uma perspectiva dinâmica e diversa. Conhecido por uma paleta de cores intensas e audaciosas, Zoinky abre portais onde criaturas se entrelaçam com formas abstratas e a delicada beleza de elementos florais, criando uma linguagem visual que celebra a interconectividade universal entre a natureza, a imaginação e a experiência humana.',
     foto: '/artistas/zoinky.png',
+    fotoPerfil: '/artistas/zoinky-perfil.jpg',
     instagram: '@zo1nky',
     destaque: true,
   },
