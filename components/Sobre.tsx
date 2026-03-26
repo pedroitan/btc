@@ -94,20 +94,7 @@ export default function Sobre() {
               ))}
             </div>
 
-            {/* DNA */}
-            <div className="mt-12 space-y-4">
-              <p className="font-mono text-[0.72rem] tracking-[0.2em] uppercase text-white/35">
-                DNA do Festival
-              </p>
-              <div className="grid grid-cols-2 gap-3">
-                {dna.map(({ titulo, desc }) => (
-                  <div key={titulo} className="bg-white/[0.04] border border-white/[0.07] p-4 reveal" style={{ borderRadius: '2px' }}>
-                    <p className="font-mono text-[0.75rem] tracking-[0.1em] uppercase text-btc-lima mb-1">{titulo}</p>
-                    <p className="font-sans font-light text-white/55 text-[0.88rem] leading-relaxed">{desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* DNA — ocultado temporariamente */}
           </div>
 
           {/* Coluna direita — Timeline */}

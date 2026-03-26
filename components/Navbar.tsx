@@ -5,10 +5,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const LINKS = [
-  { href: '/#sobre',    label: 'Festival' },
-  { href: '/#agenda',   label: 'Agenda'   },
+  { href: '/#sobre', label: 'Festival' },
   { href: '/#artistas', label: 'Artistas' },
-  { href: '/#local',    label: 'Local'    },
 ]
 
 export default function Navbar() {
@@ -23,11 +21,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-[rgba(5,5,8,0.92)] backdrop-blur-md border-b border-white/5'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'bg-[rgba(5,5,8,0.92)] backdrop-blur-md border-b border-white/5'
+        : 'bg-transparent'
+        }`}
     >
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center group">
@@ -53,15 +50,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLScpy-Z43rDFw6x1Kl5KFRA39DJ-Dn_dY_TS6y6F3k3UTgG7UQ/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-block font-mono text-[0.7rem] tracking-[0.1em] uppercase bg-btc-magenta text-white px-5 py-2 hover:bg-btc-magenta-dark hover:-translate-y-0.5 transition-all duration-150"
-          style={{ borderRadius: '2px' }}
-        >
-          Inscrever-se
-        </a>
+        {/* Inscrever-se — ocultado temporariamente */}
 
         <button
           className="md:hidden text-white/70 hover:text-white p-2"
@@ -91,16 +80,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScpy-Z43rDFw6x1Kl5KFRA39DJ-Dn_dY_TS6y6F3k3UTgG7UQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-mono text-[0.7rem] tracking-[0.1em] uppercase bg-btc-magenta text-white px-5 py-2 w-full text-center"
-            style={{ borderRadius: '2px' }}
-            onClick={() => setMenuOpen(false)}
-          >
-            Inscrever-se
-          </a>
+          {/* Inscrever-se mobile — ocultado temporariamente */}
         </div>
       )}
     </nav>

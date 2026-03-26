@@ -2,9 +2,9 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Sobre from '@/components/Sobre'
 import Artistas from '@/components/Artistas'
-import Agenda from '@/components/Agenda'
-import Tema from '@/components/Tema'
-import Local from '@/components/Local'
+// import Agenda from '@/components/Agenda'
+// import Tema from '@/components/Tema'
+// import Local from '@/components/Local'
 import Footer from '@/components/Footer'
 import ScrollReveal from '@/components/ScrollReveal'
 
@@ -39,10 +39,10 @@ export default function Home() {
       <main>
         <Hero />
         <Sobre />
-        <Tema />
+        {/* <Tema /> */}
         <Artistas />
-        <Agenda />
-        <Local />
+        {/* <Agenda /> */}
+        {/* <Local /> */}
       </main>
       <Footer />
       <ScrollReveal />
